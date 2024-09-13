@@ -1,13 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 
 export default function Navbar() {
+	const [mobileNavIsShow, setMobileNavIsShow] = useState(false);
+
+	const mobileNavHandler = () => {
+		console.log("clicked");
+		setMobileNavIsShow(!mobileNavIsShow);
+		console.log(mobileNavIsShow);
+	};
+
 	return (
 		<div className="navbar">
-			<div class="container">
+			<div className="container">
 				<div className="nav-right">
 					<h1 className="nav-logo">لرن</h1>
-					<ul className="nav-list">
+					<ul
+						className={mobileNavIsShow ? "nav-list nav-list--open" : "nav-list"}
+					>
 						<li className="nav-item nav-item--active">
 							<a href="#">صفحه اصلی</a>
 						</li>
@@ -34,12 +44,15 @@ export default function Navbar() {
 						<i className="fas fa-shopping-cart"></i>
 					</a>
 					<a className="nav-user">
-						یاشار محمدی
-						{/* <i class="fa-solid fa-user"></i> */}
+							<i class="fa-solid fa-user"></i>
+
 					</a>
-					<div className="nav-btn">
-						<i class="fa-solid fa-bars"></i>
-						{/* <i class="fa-solid fa-xmark"></i> */}
+
+					<div
+						onClick={mobileNavHandler}
+						className={mobileNavIsShow ? "nav-btn nav-btn--open" : "nav-btn"}
+					>
+						<div className="nav-btn-line"></div>
 					</div>
 				</div>
 			</div>

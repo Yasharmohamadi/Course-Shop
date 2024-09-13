@@ -1,5 +1,5 @@
 .navbar {
-	background: var(--primary-color);
+	background: var(--section-bg-color);
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -8,6 +8,7 @@
 	position: sticky;
 	top: 0;
 	box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.1);
+	border-bottom: 0.2rem solid var(--primary-color-light);
 }
 
 .nav-right,
@@ -39,30 +40,27 @@
 .nav-item a {
 	transition: all 100ms ease;
 }
-.nav-item:hover a {
-	color: #fff;
-}
 
-.nav-item--active a {
-	color: #fff;
+.nav-item--active a,
+.nav-item:hover a {
+	color: var(--primary-color);
 }
 
 .nav-serach,
 .nav-basket,
-.nav-user, 
-.nav-btn {
-	background: #fff;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	padding: 0.8rem;
-	border-radius: 1rem;
+.nav-user {
 	cursor: pointer;
+  margin-right: .5rem;
 }
 .nav-btn {
-  display: none;
+	display: none;
 }
+
+/* .fa-search:hover,
+.fa-shopping-cart:hover,
+.fa-user:hover {
+	color: var(--primary-color);
+} */
 
 /* .nav-serach {
 	height: 3.2rem;
@@ -80,3 +78,44 @@
 	display: none;
   transition: all 200ms ease;
 } */
+
+/* hamberger menu */
+.nav-btn {
+	padding: 1.5rem 1rem;
+	cursor: pointer;
+
+}
+.nav-btn-line {
+	position: relative;
+}
+.nav-btn-line,
+.nav-btn-line::before,
+.nav-btn-line::after {
+	width: 2rem;
+	height: 0.3rem;
+	background: var(--text-color);
+	border-radius: 1rem;
+	transition: all 50ms ease-in-out;
+}
+
+.nav-btn-line::before,
+.nav-btn-line::after {
+	content: "";
+	position: absolute;
+	transition: all 100ms ease-in-out;
+}
+.nav-btn-line::before {
+	top: 0.7rem;
+}
+.nav-btn-line::after {
+	top: -0.7rem;
+}
+.nav-btn--open .nav-btn-line {
+	background: transparent;
+}
+.nav-btn--open .nav-btn-line::after {
+	transform: translateY(0.7rem) rotate(45deg);
+}
+.nav-btn--open .nav-btn-line::before {
+	transform: translateY(-0.7rem) rotate(-45deg);
+}

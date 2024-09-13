@@ -15,9 +15,10 @@ html {
 }
 
 :root {
-	--primary-color: #80DEEA;
+	--primary-color: #03A9F4;
+	--primary-color-light: #4FC3F7;
 	--section-bg-color: #fff;
-	--app-bg-color: #fff;
+	--app-bg-color: #E1F5FE;
 	--dark-color: #464749;
 	--text-color: #333;
 }
