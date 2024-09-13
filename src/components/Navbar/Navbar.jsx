@@ -14,7 +14,7 @@ export default function Navbar() {
 		<div className="navbar">
 			<div className="container">
 				<div className="nav-right">
-					<h1 className="nav-logo">لرن</h1>
+					<h1 className="nav-logo">نوژه لرن</h1>
 					<ul
 						className={mobileNavIsShow ? "nav-list nav-list--open" : "nav-list"}
 					>
@@ -42,6 +42,9 @@ export default function Navbar() {
 					</div>
 					<a className="nav-basket">
 						<i className="fas fa-shopping-cart"></i>
+                        <div className="basket-notif">
+                            2
+                        </div>
 					</a>
 					<a className="nav-user">
 							<i class="fa-solid fa-user"></i>

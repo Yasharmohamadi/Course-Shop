@@ -1,5 +1,6 @@
 .navbar {
-	background: var(--section-bg-color);
+	backdrop-filter: blur(10rem);
+	/* background: var(--section-bg-color); */
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -8,7 +9,7 @@
 	position: sticky;
 	top: 0;
 	box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.1);
-	border-bottom: 0.2rem solid var(--primary-color-light);
+	border-bottom: 0.3rem solid #fff;
 }
 
 .nav-right,
@@ -22,8 +23,9 @@
 .nav-logo {
 	font-size: 2rem;
 	font-family: "IRANSans Black";
-	margin-left: 1rem;
+	/* margin-left: 1rem; */
 	cursor: pointer;
+	color: #fff;
 }
 
 .nav-list {
@@ -35,27 +37,52 @@
 	padding: 1rem 0.5rem;
 	margin: 0.5rem;
 	cursor: pointer;
-	transition: all 100ms ease;
 }
 .nav-item a {
-	transition: all 100ms ease;
+	color: #fff;
 }
+/* .nav-item::after {
+	display: block;
+	content: "";
+	border-bottom: 0.3rem solid #fff;
+	transition: all 200ms ease-in-out;
+	transform: scaleX(0);
+} */
 
-.nav-item--active a,
-.nav-item:hover a {
+/* .nav-item--active::after, */
+/* .nav-item:hover::after {
+	transform: scaleX(1);
 	color: var(--primary-color);
-}
+} */
 
 .nav-serach,
 .nav-basket,
 .nav-user {
 	cursor: pointer;
-  margin-right: .5rem;
+	margin-right: 0.6rem;
+	color: #fff;
+  font-size: 2rem;
 }
 .nav-btn {
 	display: none;
 }
-
+.nav-basket {
+	position: relative;
+}
+.basket-notif {
+	background: var(--primary-color);
+	width: 1.8rem;
+	height: 1.8rem;
+	border-radius: 100%;
+  font-size: 1.6rem;
+	/* padding: 1rem; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+  top: -1rem;
+  right: -1rem;
+}
 /* .fa-search:hover,
 .fa-shopping-cart:hover,
 .fa-user:hover {
@@ -83,7 +110,6 @@
 .nav-btn {
 	padding: 1.5rem 1rem;
 	cursor: pointer;
-
 }
 .nav-btn-line {
 	position: relative;
@@ -93,7 +119,7 @@
 .nav-btn-line::after {
 	width: 2rem;
 	height: 0.3rem;
-	background: var(--text-color);
+	background: #fff;
 	border-radius: 1rem;
 	transition: all 50ms ease-in-out;
 }
