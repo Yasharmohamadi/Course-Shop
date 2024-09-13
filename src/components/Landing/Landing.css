@@ -1,0 +1,31 @@
+.landing {
+	/* padding-top: 10rem; */
+	color: #fff;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 15rem;
+}
+.landing-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.landing-title {
+	font-size: 6rem;
+	font-family: "IRANSans Black";
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+    gap: 1.5rem;
+	/* text-shadow: 0 0 3rem rgba(0, 0, 0, 1); */
+}
+
+.landing-description {
+	text-shadow: 0 0 3rem rgba(0, 0, 0, 1);
+	font-size: 3rem;
+	margin: 4rem 0;
+	font-family: "IRANSans Bold";
+}

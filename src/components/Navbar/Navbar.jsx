@@ -14,7 +14,7 @@ export default function Navbar() {
 		<div className="navbar">
 			<div className="container">
 				<div className="nav-right">
-					<h1 className="nav-logo">نوژه لرن</h1>
+					<h1 className="nav-logo">نوژه</h1>
 					<ul
 						className={mobileNavIsShow ? "nav-list nav-list--open" : "nav-list"}
 					>
