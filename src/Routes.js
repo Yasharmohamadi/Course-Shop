@@ -1,14 +1,14 @@
-// import Home from "./pages/Home/Home";
-// import Users from "./pages/Users/Users";
-// import NewUser from "./pages/NewUser/NewUser";
-// import Products from "./pages/Products/Products";
-// import Product from "./pages/Product/Product";
 
-// export let routes = [
-// 	{ path: "/", element: <Home /> },
-// 	{ path: "/home", element: <Home /> },
-// 	{ path: "/users", element: <Users /> },
-// 	{ path: "/newuser", element: <NewUser /> },
-// 	{ path: "/products", element: <Products /> },
-// 	{ path: "/products/:id", element: <Product /> },
-// ];
+import Index from "./pages/Index/Index";
+import Course from "./pages/Course/Course";
+import Category from "./pages/Category/Category";
+import Article from "./pages/Article/Article";
+
+
+export let routes = [
+	{ path: "/", element: <Index /> },
+	{ path: "/course/:coursename", element: <Course /> },
+	{ path: "/category/:categoryname", element: <Category /> },
+	{ path: "/article/:articlename", element: <Article /> },
+
+];
