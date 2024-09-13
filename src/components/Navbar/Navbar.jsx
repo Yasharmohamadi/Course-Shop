@@ -6,9 +6,9 @@ export default function Navbar() {
 		<div className="navbar">
 			<div class="container">
 				<div className="nav-right">
-					<h1 className="nav-logo">یاشا لرن</h1>
+					<h1 className="nav-logo">لرن</h1>
 					<ul className="nav-list">
-						<li className="nav-item">
+						<li className="nav-item nav-item--active">
 							<a href="#">صفحه اصلی</a>
 						</li>
 						<li className="nav-item">
@@ -28,12 +28,19 @@ export default function Navbar() {
 				<div className="nav-left">
 					<div className="nav-serach" dir="ltr">
 						<i className="nav-serch-icon fas fa-search"></i>
-                        {/* <input className="nav-serch-input" /> */}
+						{/* <input className="nav-serch-input" /> */}
 					</div>
 					<a className="nav-basket">
 						<i className="fas fa-shopping-cart"></i>
 					</a>
-					<a className="nav-user">یاشار محمدی</a>
+					<a className="nav-user">
+						یاشار محمدی
+						{/* <i class="fa-solid fa-user"></i> */}
+					</a>
+					<div className="nav-btn">
+						<i class="fa-solid fa-bars"></i>
+						{/* <i class="fa-solid fa-xmark"></i> */}
+					</div>
 				</div>
 			</div>
 		</div>

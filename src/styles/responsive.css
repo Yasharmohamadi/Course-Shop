@@ -1,0 +1,27 @@
+@media screen and (max-width: 768px) {
+	.nav-list {
+		flex-direction: column;
+		background: var(--section-bg-color);
+		width: 25rem;
+		height: 100vh;
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: 2rem;
+		box-shadow: 1rem 0 5rem rgba(0, 0, 0, 0.5);
+	}
+	.nav-item {
+        padding-right: 1rem;
+        border-radius: 5rem;
+	}
+	.nav-item:hover {
+        background: var(--primary-color);
+    }
+    .nav-item--active {
+        background: var(--primary-color);
+
+    }
+    .nav-btn {
+        display: block;
+    }
+}
