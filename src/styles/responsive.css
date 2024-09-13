@@ -1,8 +1,29 @@
+@media screen and (max-width: 992px) {
+	.landing-title {
+		font-size: 4rem;
+	}
+	.landing-description {
+		font-size: 2rem;
+	}
+	.landing {
+		padding-top: 10rem;
+	}
+
+	.landing-status {
+		gap: 3rem;
+	}
+
+	.header {
+		margin-bottom: 15rem;
+	}
+
+	.landing-description {
+		margin-top: 4rem;
+	}
+}
 @media screen and (max-width: 768px) {
 	.nav-list {
-		display: none;
 		flex-direction: column;
-		background: var(--section-bg-color);
 		width: 100%;
 		overflow: hidden;
 		position: absolute;
@@ -12,9 +33,10 @@
 		height: 0;
 		text-align: center;
 		transition: all 200ms ease-in-out;
-		display: flex;
 		justify-content: start;
-		border-bottom: 0.2rem solid var(--primary-color-light);
+		/* z-index:10; */
+		background: var(--primary-color);
+		border-bottom: 0.3rem solid #fff;
 	}
 	.nav-list--open {
 		height: 25rem;
@@ -26,4 +48,38 @@
 	.nav-btn {
 		display: block;
 	}
+	.landing-title {
+		font-size: 3rem;
+	}
+
+	.landing-status {
+		gap: 1rem;
+		margin-top: 3rem;
+	}
+	.landing-status__item {
+		width: 18rem;
+		gap: 1rem;
+	}
+	.header {
+        padding-bottom: 12rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+	.landing-status {
+		gap: 5rem;
+		margin-top: 4rem;
+		flex-direction: column;
+	}
+
+	.landing {
+        padding-top: 7rem;
+    }
+
+	.header {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+		url(../../public/images/header-bg-min-mobile.jpg);
+    }
+
+
 }
