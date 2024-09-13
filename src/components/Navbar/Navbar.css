@@ -1,0 +1,65 @@
+.navbar {
+	background: var(--primary-color);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 7rem;
+	position: sticky;
+	top: 0;
+	box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.1);
+}
+
+.nav-right,
+.nav-left {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 1rem;
+}
+
+.nav-logo {
+	font-size: 2rem;
+	font-family: "IRANSans Black";
+	margin-left: 1rem;
+	cursor: pointer;
+}
+
+.nav-list {
+	display: flex;
+	flex-direction: row;
+}
+
+.nav-item a {
+	margin: 0 1rem;
+}
+
+.nav-serach,
+.nav-basket,
+.nav-user {
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	padding: 0.8rem;
+	border-radius: 1rem;
+	cursor: pointer;
+}
+
+/* .nav-serach {
+	height: 3.2rem;
+} */
+
+/* .nav-serach:hover .nav-serch-input {
+	display: block;
+} */
+/* 
+.nav-serch-input {
+	border: none;
+	outline: none;
+	margin: 0 1rem;
+	direction: rtl;
+	display: none;
+  transition: all 200ms ease;
+} */

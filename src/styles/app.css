@@ -1,0 +1,34 @@
+@import url(./fonts.css);
+@import url(./grid.css);
+@import url(./helpers.css);
+@import url(./reset.css);
+
+html {
+	font-size: 10px;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--primary-color: #80DEEA;
+	--section-bg-color: #fff;
+	--app-bg-color: #fff;
+	--dark-color: #464749;
+	--text-color: #333;
+}
+
+body {
+	font-family: "IRANSans";
+	color: var(--text-color) !important;
+	font-size: 1.6rem;
+    background: var(--app-bg-color);
+}
+
+a {
+	color: var(--text-color) !important;
+	text-decoration: none;
+}
