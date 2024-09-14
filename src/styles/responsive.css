@@ -7,14 +7,11 @@
 	}
 	.landing {
 		padding-top: 10rem;
+		margin-bottom: 15rem;
 	}
 
 	.landing-status {
 		gap: 3rem;
-	}
-
-	.header {
-		margin-bottom: 15rem;
 	}
 
 	.landing-description {
@@ -60,7 +57,7 @@
 		width: 18rem;
 		gap: 1rem;
 	}
-	.header {
+	.landing {
         padding-bottom: 12rem;
     }
 }
