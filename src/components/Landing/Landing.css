@@ -4,8 +4,10 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding-top: 15rem;
-	padding-bottom: 20rem;
+
+	
+	
+	padding: 12rem 0;
 }
 .landing-wrapper {
 	display: flex;

@@ -6,8 +6,7 @@
 		font-size: 2rem;
 	}
 	.landing {
-		padding-top: 10rem;
-		margin-bottom: 15rem;
+		padding: 10rem 0;
 	}
 
 	.landing-status {
@@ -57,9 +56,6 @@
 		width: 18rem;
 		gap: 1rem;
 	}
-	.landing {
-        padding-bottom: 12rem;
-    }
 }
 
 @media screen and (max-width: 576px) {
