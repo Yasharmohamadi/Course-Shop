@@ -4,17 +4,18 @@
 	box-shadow: 0 0 3rem rgba(0, 0, 0, 0.1);
 	border-radius: 1rem;
 	overflow: hidden;
-	border: 0.1rem solid #dbdbdb;
-    color: var(--primary-color);
+	border: var(--border);
+    color: #fff;
 	cursor: pointer;
 	transition: all 50ms ease;
 }
 .coursebox:hover {
 	
-	box-shadow: 0 0 3rem rgba(0, 0, 0, 0.4);
+	box-shadow: 0 0 3rem rgba(0, 0, 0, 0.7);
 
 }
 .coursebox_img {
+	height: 26rem;
 }
 
 .coursebox_details {
@@ -51,7 +52,7 @@
 	width: 100%;
 	/* background: #fff; */
 	border-top: 0.1rem solid #dbdbdb;
-	color: var(--primary-color);
+	color: #fff;
 	display: flex;
 	flex-direction: row;
 	align-items: center;

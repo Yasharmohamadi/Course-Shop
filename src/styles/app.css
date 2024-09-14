@@ -18,16 +18,19 @@ html {
 	--primary-color: #20545a;
 	/* --primary-color-light: #4FC3F7; */
 	--section-bg-color: #fff;
-	--app-bg-color: #E1F5FE;
+	--app-bg-color: #e1f5fe;
 	--dark-color: #464749;
 	--text-color: #333;
+
+	--border: 0.2rem solid #fff;
 }
 
 body {
 	font-family: "IRANSans";
 	color: var(--text-color) !important;
 	font-size: 1.6rem;
-    background: var(--app-bg-color);
+	/* background: var(--app-bg-color); */
+	background: var(--primary-color);
 }
 
 a {
