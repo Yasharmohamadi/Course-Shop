@@ -31,8 +31,10 @@
 		transition: all 200ms ease-in-out;
 		justify-content: start;
 		/* z-index:10; */
-		background: var(--primary-color);
-		border-bottom: 0.3rem solid #fff;
+
+		background: linear-gradient(to bottom, var(--primary-color), #20545add);
+
+		border-bottom: var(--border);
 	}
 	.nav-list--open {
 		height: 25rem;
@@ -66,13 +68,11 @@
 	}
 
 	.landing {
-        padding-top: 7rem;
-    }
+		padding-top: 7rem;
+	}
 
 	.header {
 		background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-		url(../../public/images/header-bg-min-mobile.jpg);
-    }
-
-
+			url(../../public/images/header-bg-min-mobile.jpg);
+	}
 }

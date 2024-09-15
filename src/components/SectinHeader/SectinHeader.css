@@ -36,5 +36,29 @@
 	justify-content: center;
 	align-items: center;
 	gap: 1rem;
-	width: 13.5rem;
+	width: 18.5rem;
+	position: relative;
+}
+
+
+.section-header_more::after {
+    content: "";
+    position: absolute;
+    background:rgba(255, 255, 255, 0.677);
+    width: 2.5rem;
+    height: 2.5rem;
+    transform: rotate(45deg);
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: 0;
+    border-radius: 0.5rem;
+	transition: all 150ms ease-in-out;
+	z-index: 1;
+}
+
+.section-header_more:hover::after {
+	opacity: 0.5;
 }

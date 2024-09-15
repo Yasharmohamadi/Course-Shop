@@ -10,6 +10,11 @@
 	top: 0;
 	box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.1);
 	border-bottom: var(--border);
+	background: linear-gradient(
+		to bottom,
+		var(--primary-color),
+		#20545a88
+	);
 }
 
 .nav-right,
@@ -42,21 +47,15 @@
 	color: #fff;
 	position: relative;
 }
-/* .nav-item::after {
-	display: block;
-	content: "";
-	border-bottom: 0.3rem solid #fff;
-	transition: all 200ms ease-in-out;
-	transform: scaleX(0);
-} */
+
 
 .nav-item a::after {
     content: "";
     position: absolute;
     background:rgba(255, 255, 255, 0.677);
-    width: 4rem;
-    height: 1rem;
-    transform: rotate(-7deg);
+    width: 2rem;
+    height: 2rem;
+    transform: rotate(45deg);
     right: 0;
     left: 0;
     top: 0;
@@ -108,28 +107,6 @@
 	top: -1rem;
 	right: -1rem;
 }
-/* .fa-search:hover,
-.fa-shopping-cart:hover,
-.fa-user:hover {
-	color: var(--primary-color);
-} */
-
-/* .nav-serach {
-	height: 3.2rem;
-} */
-
-/* .nav-serach:hover .nav-serch-input {
-	display: block;
-} */
-/* 
-.nav-serch-input {
-	border: none;
-	outline: none;
-	margin: 0 1rem;
-	direction: rtl;
-	display: none;
-  transition: all 200ms ease;
-} */
 
 /* hamberger menu */
 .nav-btn {
