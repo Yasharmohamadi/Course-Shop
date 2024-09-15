@@ -24,9 +24,6 @@
 	justify-content: center;
     flex-wrap: wrap;
 	gap: 1.5rem;
-	/* z-index: 9; */
-
-	/* text-shadow: 0 0 3rem rgba(0, 0, 0, 1); */
 }
 
 .landing-description {

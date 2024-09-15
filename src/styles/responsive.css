@@ -16,6 +16,9 @@
 	.landing-description {
 		margin-top: 4rem;
 	}
+	.footer .container .row {
+		gap: 2rem;
+	} 
 }
 @media screen and (max-width: 768px) {
 	.nav-list {
@@ -31,8 +34,9 @@
 		transition: all 200ms ease-in-out;
 		justify-content: start;
 		/* z-index:10; */
+		background: var(--primary-color);
 
-		background: linear-gradient(to bottom, var(--primary-color), #20545add);
+		/* background: linear-gradient(to bottom, var(--primary-color), #20545add); */
 
 		border-bottom: var(--border);
 	}
