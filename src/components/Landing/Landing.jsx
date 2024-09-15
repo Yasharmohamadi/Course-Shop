@@ -1,6 +1,7 @@
 import React from "react";
 import "./Landing.css";
 import Typewriter from "typewriter-effect";
+import LandingCounter from '../LandingCounter/LandingCounter'
 
 export default function Landing() {
 	return (
@@ -40,7 +41,8 @@ export default function Landing() {
 								fill="#fff"
 							></path>
 						</svg>
-						<span class="landing-status__count">71</span>
+
+						<LandingCounter count={71}/>
 						<span class="landing-status__text">
 							کاربر توی نوژه ثبت نام کردن
 						</span>
@@ -61,7 +63,8 @@ export default function Landing() {
 								fill="#fff"
 							></path>
 						</svg>
-						<span class="landing-status__count">40</span>
+						<LandingCounter count={6}/>
+
 						<span class="landing-status__text">دوره آموزشی داریم</span>
 					</div>
 
@@ -116,7 +119,8 @@ export default function Landing() {
 								</g>
 							</g>
 						</svg>
-						<span class="landing-status__count">970</span>
+						<LandingCounter count={730}/>
+
 						<span class="landing-status__text">دقیقه آموزش تولید کردیم</span>
 					</div>
 				</div>
