@@ -3,6 +3,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import Header from "../../components/Header/Header";
 import LastCourse from "../../components/LastCourse/LastCourse";
 import Aboutus from "../../components/Aboutus/Aboutus";
+import PopularCourse from "../../components/PopularCourse/PopularCourse";
 
 export default function Home() {
 	return (
@@ -11,6 +12,7 @@ export default function Home() {
 			<Header />
 			<LastCourse />
 			<Aboutus />
+			<PopularCourse />
 		</div>
 	);
 }

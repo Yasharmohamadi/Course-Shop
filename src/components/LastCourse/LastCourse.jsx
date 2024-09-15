@@ -10,22 +10,13 @@ export default function LastCourse() {
 				<SectinHeader title="آخرین دوره ها" hasBtn={true}/>
 				<div className="row courses-content">
 					<div className="col-12 col-lg-6 col-xxl-4">
-						<CourseBox title='دوره آموزشی جنگو' img="images/courses/jango.png" />
+						<CourseBox title='دوره آموزشی جنگو' img="images/courses/fareelancer.png" />
 					</div>
 					<div className="col-12 col-lg-6 col-xxl-4">
-						<CourseBox title='دوره آموزشی پایتون' img="images/courses/python.png" />
+						<CourseBox title='دوره آموزشی پایتون' img="images/courses/nodejs.png" />
 					</div>
 					<div className="col-12 col-lg-6 col-xxl-4">
-						<CourseBox title='دوره آموزشی نود جی اس' img="images/courses/nodejs.png" />
-					</div>
-					<div className="col-12 col-lg-6 col-xxl-4">
-						<CourseBox title='دوره آموزشی پایتون' img="images/courses/python.png" />
-					</div>
-					<div className="col-12 col-lg-6 col-xxl-4">
-						<CourseBox title='دوره آموزشی نود جی اس' img="images/courses/nodejs.png" />
-					</div>
-					<div className="col-12 col-lg-6 col-xxl-4">
-						<CourseBox title='دوره آموزشی جنگو' img="images/courses/jango.png" />
+						<CourseBox title='دوره آموزشی نود جی اس' img="images/courses/js_project.png" />
 					</div>
 				</div>
 			</div>
