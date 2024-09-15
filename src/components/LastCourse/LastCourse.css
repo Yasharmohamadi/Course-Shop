@@ -1,14 +1,9 @@
 .last-course {
     padding-top: 7rem;
-    padding-bottom: 10rem;
 	border-top: var(--border);
 
 }
 
-.courses-wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.courses-content {
     padding-top: 4rem;
-    /* margin: 0 1rem !important; */
 }

@@ -7,8 +7,8 @@ export default function LastCourse() {
 	return (
 		<div className="last-course">
 			<div className="container">
-				<SectinHeader title="آخرین دوره ها" />
-				<div className="row courses-wrapper">
+				<SectinHeader title="آخرین دوره ها" hasBtn={true}/>
+				<div className="row courses-content">
 					<div className="col-12 col-lg-6 col-xxl-4">
 						<CourseBox title='دوره آموزشی جنگو' img="images/courses/jango.png" />
 					</div>
