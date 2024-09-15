@@ -5,16 +5,21 @@
 	border-radius: 1rem;
 	overflow: hidden;
 	border: var(--border);
-    color: #fff;
+	color: #fff;
 	cursor: pointer;
 	transition: all 50ms ease;
+	background: linear-gradient(
+		to right,
+		#ffffff21,
+		var(--primary-color),
+		#ffffff21
+	);
 }
 .coursebox:hover {
-	
 	box-shadow: 0 0 3rem rgba(0, 0, 0, 0.7);
-
 }
 .coursebox_img {
+	border-radius: 0 0 1rem 1rem;
 	/* height: 26rem; */
 }
 
@@ -37,11 +42,10 @@
 	margin-top: 1.5rem;
 }
 .coursebox_studends {
-
-    
 }
-.coursebox_studends svg, .coursebox_teacher svg {
-    margin-left: 0.5rem;
+.coursebox_studends svg,
+.coursebox_teacher svg {
+	margin-left: 0.5rem;
 }
 .coursebox_price {
 }
@@ -50,8 +54,9 @@
 	padding: 1.5rem;
 	text-align: center;
 	width: 100%;
-	/* background: #fff; */
-	border-top: 0.1rem solid #dbdbdb;
+
+	background: transparent;
+	border-top: 0.1rem solid #ffffff21;
 	color: #fff;
 	display: flex;
 	flex-direction: row;

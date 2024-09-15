@@ -9,6 +9,12 @@
 	border: var(--border);
 	color: #fff;
     gap: 2rem;
+    background: linear-gradient(
+		to right,
+		#ffffff21,
+		var(--primary-color),
+		#ffffff21
+	);
 }
 
 .aboutusbox svg{
