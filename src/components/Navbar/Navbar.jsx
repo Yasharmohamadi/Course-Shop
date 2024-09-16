@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Navbar() {
 	const [mobileNavIsShow, setMobileNavIsShow] = useState(false);
@@ -14,25 +15,28 @@ export default function Navbar() {
 		<div className="navbar">
 			<div className="container">
 				<div className="nav-right">
-					<h1 className="nav-logo">نوژه</h1>
+					<NavLink to="/">
+						<h1 className="nav-logo">نوژه</h1>
+					</NavLink>
 					<ul
 						className={mobileNavIsShow ? "nav-list nav-list--open" : "nav-list"}
 					>
-						<li className="nav-item nav-item--active">
-							<a href="#">صفحه اصلی</a>
-						</li>
-						<li className="nav-item">
-							<a href="#">فرانت اند</a>
-						</li>
-						<li className="nav-item">
-							<a href="#">امنیت</a>
-						</li>
-						<li className="nav-item">
-							<a href="#">مقالات</a>
-						</li>
-						<li className="nav-item">
-							<a href="#">پایتون</a>
-						</li>
+						<NavLink
+							to="/"
+							className={`${(link) =>
+								link.isActive ? "active " : ""}`}
+						>
+							<li className="nav-item">صفحه اصلی</li>
+						</NavLink>
+						<NavLink to="/category/front" className="nav-item">
+							<li className="nav-item">فرانت اند</li>
+						</NavLink>
+						<NavLink to="/category/security" className="nav-item">
+							<li className="nav-item">امنیت</li>
+						</NavLink>
+						<NavLink to="/category/python" className="nav-item">
+							<li className="nav-item">پایتون</li>
+						</NavLink>
 					</ul>
 				</div>
 				<div className="nav-left">
@@ -42,13 +46,10 @@ export default function Navbar() {
 					</div>
 					<a className="nav-basket">
 						<i className="fas fa-shopping-cart"></i>
-                        <div className="basket-notif">
-                            2
-                        </div>
+						<div className="basket-notif">2</div>
 					</a>
 					<a className="nav-user">
-							<i class="fa-solid fa-user"></i>
-
+						<i class="fa-solid fa-user"></i>
 					</a>
 
 					<div

@@ -10,31 +10,31 @@ export default function LastCourse() {
 				<SectinHeader title="آخرین دوره ها" hasBtn={true}/>
 				<div className="row courses-content">
 					<div className="col-12 col-md-6 col-xl-4">
-						<CourseBox title='پروژه های فریلنسری' img="images/courses/fareelancer.png" />
+						<CourseBox title='پروژه های فریلنسری' img="/images/courses/fareelancer.png" />
 					</div>
 					<div className="col-12 col-md-6 col-xl-4">
-						<CourseBox title='دوره API نویسی' img="images/courses/nodejs.png" />
+						<CourseBox title='دوره API نویسی' img="/images/courses/nodejs.png" />
 					</div>
 					<div className="col-12 col-md-6 col-xl-4">
-						<CourseBox title='پروژه های جاوا اسکریپت' img="images/courses/js_project.png" />
+						<CourseBox title='پروژه های جاوا اسکریپت' img="/images/courses/js_project.png" />
 					</div>
 					<div className="col-12 col-md-6 col-xl-4">
-						<CourseBox title='دوره متخصص جنگو' img="images/courses/jango.png" />
+						<CourseBox title='دوره متخصص جنگو' img="/images/courses/jango.png" />
 					</div>
 					<div className="col-12 col-md-6 col-xl-4">
-						<CourseBox title='دوره آموزشی پایتون' img="images/courses/python.png" />
+						<CourseBox title='دوره آموزشی پایتون' img="/images/courses/python.png" />
 					</div>
 					<div className="col-12 col-md-6 col-xl-4">
-						<CourseBox title='دوره یوتیوبر تخصصی' img="images/courses/youtuber.png" />
+						<CourseBox title='دوره یوتیوبر تخصصی' img="/images/courses/youtuber.png" />
 					</div>
 					<div className="col-12 col-md-6 col-xl-4">
-						<CourseBox title='دوره متخصص نکست' img="images/courses/nextjs.webp" />
+						<CourseBox title='دوره متخصص نکست' img="/images/courses/nextjs.webp" />
 					</div>
 					<div className="col-12 col-md-6 col-xl-4">
-						<CourseBox title='دوره متخصص نکست' img="images/courses/python2.webp" />
+						<CourseBox title='دوره متخصص نکست' img="/images/courses/python2.webp" />
 					</div>
 					<div className="col-12 col-md-6 col-xl-4">
-						<CourseBox title='دوره متخصص نکست' img="images/courses/pythonmini.webp" />
+						<CourseBox title='دوره متخصص نکست' img="/images/courses/pythonmini.webp" />
 					</div>
 					
 				</div>

@@ -70,6 +70,8 @@ export default function Footer() {
 			<div className="footer_copyright">
 				<p>کد نویسی شده توسط یاشار محمدی</p>
 			</div>
-		</div>
+			</div>
+
+
 	);
 }
