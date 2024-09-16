@@ -3,6 +3,7 @@ import "./Category.css";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import CourseBox from "../../components/CourseBox/CourseBox";
+import Pagination from "../../components/Pagination/Pagination";
 
 export default function Category() {
 	const [showColumn, setShowColumn] = useState(false);
@@ -141,6 +142,7 @@ export default function Category() {
 						<CourseBox />
 					</div>
 				</div>
+				<Pagination />
 			</div>
 			<Footer />
 		</div>

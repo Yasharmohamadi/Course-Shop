@@ -10,31 +10,31 @@ export default function PopularCourse() {
 				<SectinHeader title="محبوب ترین دوره ها" hasBtn={true}/>
 				<div className="row courses-content">
 					<div className="col-12 col-md-6 col-xl-4">
-						<CourseBox title='دوره متخصص جنگو' img="/images/courses/jango.png" />
+						<CourseBox title='دوره متخصص جنگو' img="/images/courses/jango.png1" />
 					</div>
 					<div className="col-12 col-md-6 col-xl-4">
-						<CourseBox title='دوره آموزشی پایتون' img="/images/courses/python.png" />
+						<CourseBox title='دوره آموزشی پایتون' img="/images/courses/python.png1" />
 					</div>
 					<div className="col-12 col-md-6 col-xl-4">
-						<CourseBox title='دوره یوتیوبر تخصصی' img="/images/courses/youtuber.png" />
+						<CourseBox title='دوره یوتیوبر تخصصی' img="/images/courses/youtuber.png1" />
 					</div>
 					<div className="col-12 col-md-6 col-xl-4">
-						<CourseBox title='دوره متخصص نکست' img="/images/courses/php.webp" />
+						<CourseBox title='دوره متخصص نکست' img="/images/courses/php.webp1" />
 					</div>
 					<div className="col-12 col-md-6 col-xl-4">
-						<CourseBox title='دوره متخصص نکست' img="/images/courses/hacker.webp" />
+						<CourseBox title='دوره متخصص نکست' img="/images/courses/hacker.webp1" />
 					</div>
 					<div className="col-12 col-md-6 col-xl-4">
-						<CourseBox title='دوره متخصص نکست' img="/images/courses/dashboard.webp" />
+						<CourseBox title='دوره متخصص نکست' img="/images/courses/dashboard.webp1" />
 					</div>
 					<div className="col-12 col-md-6 col-xl-4">
-						<CourseBox title='دوره متخصص نکست' img="/images/courses/exp.webp" />
+						<CourseBox title='دوره متخصص نکست' img="/images/courses/exp.webp1" />
 					</div>
 					<div className="col-12 col-md-6 col-xl-4">
-						<CourseBox title='دوره متخصص نکست' img="/images/courses/algorithm.webp" />
+						<CourseBox title='دوره متخصص نکست' img="/images/courses/algorithm.webp1" />
 					</div>
 					<div className="col-12 col-md-6 col-xl-4">
-						<CourseBox title='دوره متخصص نکست' img="/images/courses/docker.webp" />
+						<CourseBox title='دوره متخصص نکست' img="/images/courses/docker.webp1" />
 					</div>
 				</div>
 			</div>
