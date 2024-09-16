@@ -15,7 +15,6 @@
 	);
 	border: var(--border);
 	border-radius: 1rem;
-
 	padding: 1rem;
 }
 .category-header_filterbox {
@@ -42,12 +41,17 @@
 	border-radius: 1rem;
 	padding: 0.5rem 1rem;
 	position: relative;
+
 }
 .category-header_selection-text {
 	display: flex;
 	gap: 1rem;
 	cursor: pointer;
 	color: #fff;
+	width: 100%;
+	justify-content: space-between;
+	flex-direction: row;
+
 }
 .category-header_selection-text svg {
 	width: 2rem;
@@ -57,41 +61,43 @@
 .category-header_selection-list {
 	border-radius: 1rem;
 
-  position: absolute;
-  border: var(--border);
-  background: var(--primary-color);
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  gap: .5rem;
-  padding: 1rem;
-  width: 27rem;
-  top: 3rem;
-  left: -13rem;
-
+	position: absolute;
+	border: var(--border);
+	background: var(--primary-color);
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	padding: 1rem;
+	width: 27rem;
+	top: 3rem;
+	left: -13rem;
 }
 
 .category-header_selection-item {
-  padding: 0.5rem 1rem;
+	padding: 0.5rem 1rem;
 	border-radius: 1rem;
 	border: 0.3rem solid #ffffff00;
-  
-  cursor: pointer;
+
+	cursor: pointer;
 }
 .category-header_selection-item:hover {
-  border: var(--border);
-  background: #ffffff21;
+	border: var(--border);
+	background: #ffffff21;
 }
 
+
+
 .category-header_searchbox form {
+
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+  justify-content: space-between;
 	background: var(--primary-color);
 	border: var(--border);
 	border-radius: 1rem;
 	padding: 0.5rem 1rem;
-  
 }
 
 .category-header_searchbox-input {

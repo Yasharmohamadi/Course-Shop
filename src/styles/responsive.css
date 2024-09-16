@@ -33,11 +33,7 @@
 		text-align: center;
 		transition: all 200ms ease-in-out;
 		justify-content: start;
-		/* z-index:10; */
 		background: var(--primary-color);
-
-		/* background: linear-gradient(to bottom, var(--primary-color), #20545add); */
-
 		border-bottom: var(--border);
 	}
 	.nav-list--open {
@@ -62,6 +58,22 @@
 		width: 18rem;
 		gap: 1rem;
 	}
+
+	.category-header {
+		flex-direction: column-reverse;
+		gap: 1rem;
+		
+
+	}
+	.category-header_filterbox {
+		width: 100%;
+	}
+	.category-header_selection {
+		width: 100%;
+	}
+	.category-header_searchbox {
+		width: 100%;
+	  }
 }
 
 @media screen and (max-width: 576px) {
