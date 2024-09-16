@@ -4,7 +4,7 @@ import './AboutusBox.css'
 export default function AboutusBox({title, description, icon}) {
   return (
     <div className='aboutusbox'>
-        <i className={`aboutusbox_icon ${icon}`}></i>
+            <img className='aboutusbox_icon' src={icon} />
         <div className='aboutusbox_text'>
             <span className='aboutusbox_title'>{title}</span>
             <span className='aboutusbox_description'>{description}</span>

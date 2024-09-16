@@ -10,11 +10,7 @@
 	top: 0;
 	box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.1);
 	border-bottom: var(--border);
-	background: linear-gradient(
-		to bottom,
-		var(--primary-color),
-		#20545a88
-	);
+	background: linear-gradient(to bottom, var(--primary-color), #20545a88);
 }
 
 .nav-right,
@@ -43,29 +39,27 @@
 .nav-item {
 	color: #fff;
 	position: relative;
-
 }
 
 .nav-item::after {
 	color: #fff;
 	content: "";
-    position: absolute;
-    background:rgba(255, 255, 255, 0.677);
-    width: 2rem;
-    height: 2rem;
-    transform: rotate(45deg);
-    right: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    opacity: 0;
-    border-radius: 0.5rem;
+	position: absolute;
+	background: rgba(255, 255, 255, 0.677);
+	width: 2rem;
+	height: 2rem;
+	transform: rotate(45deg);
+	right: 0;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	opacity: 0;
+	border-radius: 0.5rem;
 	transition: all 150ms ease-in-out;
 }
 .nav-item:hover {
 	text-shadow: 0 0 1rem #000;
-
 }
 .active > .nav-item::after {
 	opacity: 0.4;
@@ -78,6 +72,12 @@
 	margin-right: 0.6rem;
 	color: #fff;
 	font-size: 2rem;
+}
+.nav-serach svg,
+.nav-basket svg,
+.nav-user svg {
+	width: 2rem;
+	height: 2rem;
 }
 
 .nav-btn {

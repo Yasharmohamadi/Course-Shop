@@ -13,28 +13,28 @@ export default function Aboutus() {
 						<AboutusBox
 							title="دوره های اختصاصی"
 							description="با پشتیبانی و کیفیت بالا ارائه میده !"
-							icon="fa-regular fa-face-grin-stars"
+							icon='/images/svgs/happy.svg'
 						/>
 					</div>
 					<div className="col-12 col-xl-6">
 						<AboutusBox
 							title="دوره پولی و رایگان"
 							description="با بهترین کیفیت دوره میسازه"
-                            icon="fa-regular fa-gem"
-                            />
+							icon='/images/svgs/gem.svg'
+						/>
 					</div>
 					<div className="col-12 col-xl-6">
 						<AboutusBox
 							title="اهمیت به داشنجو"
 							description="اولیت اول و آخر آکادمی نوژه داشنجو هاست ."
-							icon="fa-solid fa-crown"
+							icon='/images/svgs/royal.svg'
 						/>
 					</div>
 					<div className="col-12 col-xl-6">
 						<AboutusBox
 							title="مدرسین مجرب"
 							description="هرکسی رو برای تدریس انتخاب نمیکنه چون کیفیت براش مهمه"
-							icon="fa-solid fa-chalkboard-user"
+							icon='/images/svgs/teacher.svg'
 						/>
 					</div>
 				</div>

@@ -41,6 +41,8 @@
 .coursebox_studends svg,
 .coursebox_teacher svg {
 	margin-left: 0.5rem;
+	width: 2rem;
+	height: 2rem;
 }
 
 .coursebox_btn {
@@ -56,4 +58,8 @@
 	align-items: center;
 	justify-content: center;
 	gap: 1rem;
+}
+.coursebox_btn svg {
+	width: 2rem;
+	height: 2rem;
 }
