@@ -18,11 +18,17 @@
 	}
 	.footer .container .row {
 		gap: 2rem;
-	} 
+	}
 	.course_header {
 		flex-direction: column-reverse;
 		/* gap: 5rem; */
+	}
+	.course_main {
+		flex-direction: column-reverse;
+	}
 
+	.course_students {
+		margin-bottom: 0;
 	}
 }
 @media screen and (max-width: 768px) {
@@ -67,8 +73,6 @@
 	.category-header {
 		flex-direction: column-reverse;
 		gap: 1rem;
-		
-
 	}
 	.category-header_filterbox {
 		width: 100%;
@@ -78,7 +82,7 @@
 	}
 	.category-header_searchbox {
 		width: 100%;
-	  }
+	}
 }
 
 @media screen and (max-width: 576px) {

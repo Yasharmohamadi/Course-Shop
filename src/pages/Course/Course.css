@@ -52,7 +52,8 @@
 	height: 100%;
 }
 
-.course_content {
+.course_main {
+	display: flex;
 }
 .course_main-right {
 }
@@ -141,10 +142,9 @@
 	flex-direction: row;
 	gap: 1rem;
 	margin-top: 4rem;
-
 }
 .course_intro_btn {
-	background:#898d18;
+	background: #898d18;
 	border-radius: 1rem;
 	border: var(--border);
 	padding: 1rem 1.5rem;
@@ -172,14 +172,13 @@
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-	
 }
 .techaer_profile {
+	cursor: pointer;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	gap: 1rem;
-	
 }
 .teacher_img {
 	width: 6rem;
@@ -194,12 +193,12 @@
 }
 .teacher_name {
 	font-size: 2rem;
-
 }
 .teacher_task {
-	
 }
 .teacher_position {
+	cursor: pointer;
+
 	background: #898d18;
 	border: var(--border);
 	border-radius: 1rem;
@@ -207,9 +206,8 @@
 	display: flex;
 	align-items: center;
 	gap: 0.5rem;
-	
 }
-.teacher_position img{
+.teacher_position img {
 	width: 2rem;
 }
 
@@ -217,4 +215,38 @@
 	line-height: 1.8;
 	font-size: 1.8rem;
 	text-align: justify;
+}
+
+.course_register,
+.course_students {
+	background: var(--background);
+	border-radius: 1rem;
+	border: var(--border);
+	height: 7.5rem;
+	padding: 1rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 3rem;
+}
+.course_register_content,
+.course_students_content {
+	background: #898d18;
+	border-radius: 1rem;
+	border: var(--border);
+	padding: 1rem 1.5rem;
+	color: #fff;
+	font-size: 2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	width: 100%;
+	height: 5rem;
+}
+.course_register svg,
+.course_students svg {
+	width: 3rem;
 }
