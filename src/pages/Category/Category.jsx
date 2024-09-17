@@ -4,6 +4,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import CourseBox from "../../components/CourseBox/CourseBox";
 import Pagination from "../../components/Pagination/Pagination";
+import { NavLink } from "react-router-dom";
 
 export default function Category() {
 	const [showColumn, setShowColumn] = useState(false);
@@ -133,13 +134,19 @@ export default function Category() {
 					}`}
 				>
 					<div className="col-12 col-md-6 col-xl-4">
-						<CourseBox />
+						<NavLink to="/course/js">
+							<CourseBox />
+						</NavLink>
 					</div>
 					<div className="col-12 col-md-6 col-xl-4">
-						<CourseBox />
+						<NavLink to="/course/js">
+							<CourseBox />
+						</NavLink>
 					</div>
 					<div className="col-12 col-md-6 col-xl-4">
-						<CourseBox />
+						<NavLink to="/course/js">
+							<CourseBox />
+						</NavLink>
 					</div>
 				</div>
 				<Pagination />
