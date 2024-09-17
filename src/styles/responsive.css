@@ -19,6 +19,11 @@
 	.footer .container .row {
 		gap: 2rem;
 	} 
+	.course_header {
+		flex-direction: column-reverse;
+		/* gap: 5rem; */
+
+	}
 }
 @media screen and (max-width: 768px) {
 	.nav-list {
@@ -90,5 +95,8 @@
 	.header {
 		background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
 			url(../../public/images/header-bg-min-mobile.jpg);
+	}
+	.course_header-title {
+		font-size: 2.5rem;
 	}
 }

@@ -10,18 +10,21 @@ export default function Course() {
 			<Navbar />
 
 			<div className="container">
-				<BreadCrumb 
-				links={[
-					{id: 1, title: 'خانه', to: ''},
-					{id: 2, title: 'فرانت اند', to: 'category/front'},
-					{id: 3, title: 'جاوا اسکریپت', to: 'course/js'},
-				]}/>
-				{/* <div className="course_header">
+				<BreadCrumb
+					links={[
+						{ id: 1, title: "خانه", to: "" },
+						{ id: 2, title: "فرانت اند", to: "category/front" },
+						{ id: 3, title: "جاوا اسکریپت", to: "course/js" },
+					]}
+				/>
+				<div className="course_header">
 					<div className="course_header-content">
-						<div className="course_header-label">
-							آموزش برنامه نویسی فرانت اند
+						<div className="course_header-title-wrapper">
+							<h3 className="course_header-title">آموزش جاوا اسکریپت</h3>
+							<div className="course_header-label">
+								فرانت اند
+							</div>
 						</div>
-						<h3 className="course_header-title">آموزش جاوا اسکریپت</h3>
 						<p className="course_header-description">
 							لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
 							استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
@@ -36,10 +39,16 @@ export default function Course() {
 							دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
 						</p>
 					</div>
-					<img className="course_header-banner" src=""></img>
-				</div> */}
-
-				{/* <div className="row course_content">
+					<div className="course_header-cover">
+						<video
+							className="course_header-cover_video"
+							src=""
+							controls
+						></video>
+					</div>
+				</div>
+				{/* 
+				<div className="row course_content">
 					<div className="col-8 course_content-right">
 						<div className="row">
 							<div className="col-4"></div>
