@@ -135,17 +135,26 @@ export default function Category() {
 				>
 					<div className="col-12 col-md-6 col-xl-4">
 						<NavLink to="/course/js">
-							<CourseBox />
+							<CourseBox
+								title="دوره متخصص جنگو"
+								img="/images/courses/jango.png1"
+							/>
 						</NavLink>
 					</div>
 					<div className="col-12 col-md-6 col-xl-4">
 						<NavLink to="/course/js">
-							<CourseBox />
+							<CourseBox
+								title="دوره متخصص جنگو"
+								img="/images/courses/jango.png1"
+							/>
 						</NavLink>
 					</div>
 					<div className="col-12 col-md-6 col-xl-4">
 						<NavLink to="/course/js">
-							<CourseBox />
+							<CourseBox
+								title="دوره متخصص جنگو"
+								img="/images/courses/jango.png1"
+							/>
 						</NavLink>
 					</div>
 				</div>

@@ -4,18 +4,15 @@
 	border: var(--border);
 	border-radius: 1rem;
 	margin-top: 4rem;
+	margin-bottom: 4rem;
 	padding: 3rem;
 	color: #fff;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	gap: 3rem;
-	background: linear-gradient(
-		to right,
-		#ffffff21,
-		var(--primary-color),
-		#ffffff21
-	);
+	background: var(--background);
+
 }
 .course_header-content {
 	flex-basis: 50%;
@@ -34,6 +31,7 @@
 	display: inline;
 	border: var(--border);
 	border-radius: 1rem;
+	cursor: pointer;
 }
 .course_header-title {
 	font-size: 3rem;
@@ -56,7 +54,25 @@
 
 .course_content {
 }
-.course_content-right {
+.course_main-right {
+	
 }
-.course_content-left {
+
+.course_info_wrapper {
+
+}
+.course_info_box {
+	width: 3rem;
+	height: 3rem;
+	background: #000;
+	margin: 1rem;
+}
+
+
+.course_main-left {
+	border: var(--border);
+	height: 30rem;
+	border-radius: 1rem;
+	background: var(--background);
+
 }

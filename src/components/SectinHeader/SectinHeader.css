@@ -40,6 +40,10 @@
 	position: relative;
 }
 
+.section-header_more-icon {
+	width: 2rem;
+}
+
 
 .section-header_more::after {
     content: "";

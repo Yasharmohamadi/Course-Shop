@@ -3,6 +3,8 @@ import "./Course.css";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import BreadCrumb from "../../components/BreadCrumb/BreadCrumb";
+import CourseDetailBox from "../../components/CourseDetailBox/CourseDetailBox";
+import { NavLink } from "react-router-dom";
 
 export default function Course() {
 	return (
@@ -22,7 +24,9 @@ export default function Course() {
 						<div className="course_header-title-wrapper">
 							<h3 className="course_header-title">آموزش جاوا اسکریپت</h3>
 							<div className="course_header-label">
-								فرانت اند
+								<NavLink to="/category/front" className="nav-item">
+									فرانت اند
+								</NavLink>
 							</div>
 						</div>
 						<p className="course_header-description">
@@ -44,23 +48,60 @@ export default function Course() {
 							className="course_header-cover_video"
 							src=""
 							controls
+							poster=""
 						></video>
 					</div>
 				</div>
-				{/* 
-				<div className="row course_content">
-					<div className="col-8 course_content-right">
-						<div className="row">
-							<div className="col-4"></div>
-							<div className="col-4"></div>
-							<div className="col-4"></div>
-							<div className="col-4"></div>
-							<div className="col-4"></div>
-							<div className="col-4"></div>
+
+				<div className="row course_main">
+					<div className="col-8 course_main-right">
+						<div className="row course_info_wrapper">
+							<div className="col-12 col-md-6">
+								<CourseDetailBox
+									title="روش پشتیبانی"
+									caption="آنلاین"
+									svg="/images/svgs/teacher.svg"
+								/>
+							</div>
+							<div className="col-12 col-md-6">
+								<CourseDetailBox
+									title="آخرین بروزرسانی"
+									caption="1401/03/02"
+									svg="/images/svgs/gem.svg"
+								/>
+							</div>
+							<div className="col-12 col-md-6">
+								<CourseDetailBox
+									title="نوع مشاهده"
+									caption="ضبط شده / آفلاین"
+									svg="/images/svgs/happy.svg"
+								/>
+							</div>
+							<div className="col-12 col-md-6">
+								<CourseDetailBox
+									title=" مدت زمان دوره:"
+									caption="19 ساعت"
+									svg="/images/svgs/star_fill.svg"
+								/>
+							</div>
+							<div className="col-12 col-md-6">
+								<CourseDetailBox
+									title="وضعیت دوره:"
+									caption="به اتمام رسیده"
+									svg="/images/svgs/star.svg"
+								/>
+							</div>
+							<div className="col-12 col-md-6">
+								<CourseDetailBox
+									title="پیش نیاز:"
+									caption="html css"
+									svg="/images/svgs/royal.svg"
+								/>
+							</div>
 						</div>
 					</div>
-					<div className="col-4 course_content-left"></div>
-				</div> */}
+					<div className="col-4 course_main-left"></div>
+				</div>
 			</div>
 
 			<Footer />

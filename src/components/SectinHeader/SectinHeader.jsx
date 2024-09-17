@@ -9,7 +9,7 @@ export default function SectinHeader({ title, hasBtn }) {
 				<div className="section-header_more">
 					نمایش همه
 					<svg
-						class="svg-inline--fa fa-arrow-left"
+						class="section-header_more-icon"
 						aria-hidden="true"
 						focusable="false"
 						data-prefix="fas"
