@@ -12,7 +12,6 @@
 	justify-content: space-between;
 	gap: 3rem;
 	background: var(--background);
-
 }
 .course_header-content {
 	flex-basis: 50%;
@@ -23,10 +22,9 @@
 	align-items: center;
 	justify-content: space-between;
 	margin: 1rem 0 3rem 0;
-
 }
 .course_header-label {
-	background: var(--primary-color);
+	background: #898d18;
 	padding: 0.5rem 1rem;
 	display: inline;
 	border: var(--border);
@@ -55,35 +53,27 @@
 .course_content {
 }
 .course_main-right {
-	
 }
 
 .course_info_wrapper {
-
 }
 
 .course_main-left {
-	
 }
-
 
 .course_progress {
 	border: var(--border);
- 		border-radius: 1rem;
+	border-radius: 1rem;
 	background: var(--background);
-	padding: 2rem 1rem;
-	
-	
+	padding: 2rem;
 }
 .course_progress_header {
 	color: #fff;
 	font-size: 2rem;
-	
 }
 .course_progress_header svg {
 	width: 2.5rem;
 	margin-left: 1rem;
-
 }
 .course_progress_bar {
 	background: var(--primary-color);
@@ -92,7 +82,6 @@
 	width: 100%;
 	height: 1rem;
 	direction: ltr;
-	
 }
 .course_progress_line {
 	background: #fff;
@@ -100,5 +89,67 @@
 	border-radius: 1rem;
 	width: 70%;
 	height: 1rem;
+}
 
+.course_intro {
+	background: var(--background);
+	border-radius: 1rem;
+	border: var(--border);
+	padding: 3rem 2rem;
+	margin-top: 3rem;
+	color: #fff;
+}
+.course_intro_title {
+	font-size: 2.5rem;
+	font-family: "IRANSans Bold";
+	position: relative;
+	flex-basis: 85%;
+	width: 100%;
+	flex-grow: 1;
+	margin: 3.5rem 0 2rem 0;
+	position: relative;
+}
+.course_intro_title:first-child {
+	margin-top: 0;
+}
+.course_intro_title::after {
+	content: "";
+	position: absolute;
+	background: #898d18;
+	width: 3rem;
+	height: 3rem;
+	transform: rotate(45deg);
+	right: 1rem;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	opacity: 0.7;
+	border-radius: 0.5rem;
+	z-index: -1;
+}
+.course_intro_description {
+	line-height: 1.8;
+	font-size: 1.8rem;
+	text-align: justify;
+	margin-bottom: 1.8rem;
+}
+
+.course_intro_btns {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+	margin-top: 4rem;
+
+}
+.course_intro_btn {
+	background:#898d18;
+	border-radius: 1rem;
+	border: var(--border);
+	padding: 1rem 1.5rem;
+
+	color: #fff;
+}
+
+.course_intro_btn:hover {
+	text-shadow: 0 0 1rem rgba(0, 0, 0, 1);
 }
