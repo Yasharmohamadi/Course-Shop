@@ -48,7 +48,8 @@
 		border-bottom: var(--border);
 	}
 	.nav-list--open {
-		height: 25rem;
+		height: auto;
+        padding-bottom: 2rem;
 	}
 
 	.nav-item {

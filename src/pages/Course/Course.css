@@ -24,7 +24,7 @@
 	margin: 1rem 0 3rem 0;
 }
 .course_header-label {
-	background: #898d18;
+	background: var(--yellow-coloe);
 	padding: 0.5rem 1rem;
 	display: inline;
 	border: var(--border);
@@ -118,7 +118,7 @@
 .course_intro_title::after {
 	content: "";
 	position: absolute;
-	background: #898d18;
+	background: var(--yellow-coloe);
 	width: 3rem;
 	height: 3rem;
 	transform: rotate(45deg);
@@ -144,7 +144,7 @@
 	margin-top: 4rem;
 }
 .course_intro_btn {
-	background: #898d18;
+	background: var(--yellow-coloe);
 	border-radius: 1rem;
 	border: var(--border);
 	padding: 1rem 1.5rem;
@@ -199,7 +199,7 @@
 .teacher_position {
 	cursor: pointer;
 
-	background: #898d18;
+	background: var(--yellow-coloe);
 	border: var(--border);
 	border-radius: 1rem;
 	padding: 0.5rem 1rem;
@@ -232,7 +232,7 @@
 }
 .course_register_content,
 .course_students_content {
-	background: #898d18;
+	background: var(--yellow-coloe);
 	border-radius: 1rem;
 	border: var(--border);
 	padding: 1rem 1.5rem;

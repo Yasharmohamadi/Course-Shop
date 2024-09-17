@@ -8,15 +8,10 @@
 	color: #fff;
 	cursor: pointer;
 	transition: all 50ms ease;
-	background: linear-gradient(
-		to right,
-		#ffffff21,
-		var(--primary-color),
-		#ffffff21
-	);
+	background:var(--bakground);
 }
 .coursebox:hover {
-	box-shadow: 0 0 3rem rgba(0, 0, 0, 0.7);
+	box-shadow: 0 0 1rem var(--yellow-coloe);
 }
 .coursebox_img {
 	border-radius: 0 0 1rem 1rem;
@@ -49,7 +44,6 @@
 	padding: 1.5rem;
 	text-align: center;
 	width: 100%;
-
 	background: transparent;
 	border-top: 0.1rem solid #ffffff21;
 	color: #fff;
@@ -58,7 +52,10 @@
 	align-items: center;
 	justify-content: center;
 	gap: 1rem;
+	position: relative;
 }
+
+
 .coursebox_btn svg {
 	width: 2rem;
 	height: 2rem;

@@ -34,7 +34,6 @@
 	display: flex;
 	flex-direction: row;
 	gap: 2rem;
-	margin-right: 1rem;
 }
 
 .nav-item {
@@ -46,7 +45,7 @@
 	color: #fff;
 	content: "";
 	position: absolute;
-	background: rgba(255, 255, 255, 0.677);
+	background: var(--yellow-coloe);
 	width: 2rem;
 	height: 2rem;
 	transform: rotate(45deg);
@@ -58,6 +57,7 @@
 	opacity: 0;
 	border-radius: 0.5rem;
 	transition: all 150ms ease-in-out;
+	z-index: -1;
 }
 .nav-item:hover {
 	text-shadow: 0 0 1rem #000;
@@ -88,7 +88,7 @@
 	position: relative;
 }
 .basket-notif {
-	background: var(--primary-color);
+	background:var(--yellow-coloe);
 	width: 1.8rem;
 	height: 1.8rem;
 	border-radius: 100%;

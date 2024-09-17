@@ -16,17 +16,17 @@ html {
 
 :root {
 	--primary-color: #20545a;
-	/* --primary-color-light: #4FC3F7; */
+	--yellow-coloe: #898d18;
 	--section-bg-color: #fff;
 	--app-bg-color: #e1f5fe;
 	--dark-color: #464749;
 	--text-color: #333;
---background: linear-gradient(
-	to right,
-	#ffffff21,
-	var(--primary-color),
-	#ffffff21
-);
+	--background: linear-gradient(
+		to right,
+		#ffffff21,
+		var(--primary-color),
+		#ffffff21
+	);
 	--border: 0.3rem solid #ffffff21;
 }
 
