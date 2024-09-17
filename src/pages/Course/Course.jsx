@@ -185,9 +185,33 @@ export default function Course() {
 								</p>
 							</div>
 							<div className="course_intro_btns">
-								<a href="" className="course_intro_btn">دانلود همگانی ویدیو ها</a>
-								<a href="" className="course_intro_btn">دانلود همگانی پیوست ها</a>
+								<a href="" className="course_intro_btn">
+									دانلود همگانی ویدیو ها
+								</a>
+								<a href="" className="course_intro_btn">
+									دانلود همگانی پیوست ها
+								</a>
 							</div>
+						</div>
+						<div className="course_teacher">
+							<div className="teacher_header">
+								<div className="techaer_profile">
+									<img src="/images/info/teacher.jfif" className="teacher_img" />
+									<div className="teacher_details">
+										<span className="teacher_name">یاشار محمدی</span>
+										<span className="teacher_task">Front End Developer</span>
+									</div>
+								</div>
+								<div className="teacher_position">
+									مدرس
+									<img src="/images/svgs/teacher.svg" />
+								</div>
+							</div>
+							<p className="teacher_caption">
+								لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+								استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+								در ستون و سطرآنچنان که لازم است.
+							</p>
 						</div>
 					</div>
 					<div className="col-12 col-lg-4 course_main-left"></div>

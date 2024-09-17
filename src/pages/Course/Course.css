@@ -36,8 +36,10 @@
 	font-family: "IRANSans Bold";
 }
 .course_header-description {
+	line-height: 1.8;
+	font-size: 1.8rem;
 	text-align: justify;
-	line-height: 1.5;
+	margin-bottom: 1.8rem;
 }
 .course_header-cover {
 	flex-basis: 50%;
@@ -152,4 +154,67 @@
 
 .course_intro_btn:hover {
 	text-shadow: 0 0 1rem rgba(0, 0, 0, 1);
+}
+
+.course_teacher {
+	background: var(--background);
+	border-radius: 1rem;
+	border: var(--border);
+	padding: 3rem 2rem;
+	margin-top: 3rem;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+.teacher_header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	
+}
+.techaer_profile {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 1rem;
+	
+}
+.teacher_img {
+	width: 6rem;
+	height: 6rem;
+	border: var(--border);
+	border-radius: 50%;
+}
+.teacher_details {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+.teacher_name {
+	font-size: 2rem;
+
+}
+.teacher_task {
+	
+}
+.teacher_position {
+	background: #898d18;
+	border: var(--border);
+	border-radius: 1rem;
+	padding: 0.5rem 1rem;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	
+}
+.teacher_position img{
+	width: 2rem;
+}
+
+.teacher_caption {
+	line-height: 1.8;
+	font-size: 1.8rem;
+	text-align: justify;
 }
