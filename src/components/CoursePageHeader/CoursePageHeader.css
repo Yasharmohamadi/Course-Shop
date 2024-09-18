@@ -1,0 +1,119 @@
+
+.category-header {
+	margin: 4rem 0 5rem 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	background: linear-gradient(
+		to right,
+		#ffffff21,
+		var(--primary-color),
+		#ffffff21
+	);
+	border: var(--border);
+	border-radius: 1rem;
+	padding: 1rem;
+}
+.category-header_filterbox {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 1rem;
+}
+
+.category-header_row-btn path,
+.category-header_column-btn path {
+	fill: #ffffff6e;
+	cursor: pointer;
+}
+.svgIsActive path {
+	fill: #fff;
+}
+.category-header_selection {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background: var(--primary-color);
+	border: var(--border);
+	border-radius: 1rem;
+	padding: 0.5rem 1rem;
+	position: relative;
+
+}
+.category-header_selection-text {
+	display: flex;
+	gap: 1rem;
+	cursor: pointer;
+	color: #fff;
+	width: 100%;
+	justify-content: space-between;
+	flex-direction: row;
+
+}
+.category-header_selection-text svg {
+	width: 2rem;
+	height: 2rem;
+}
+
+.category-header_selection-list {
+	border-radius: 1rem;
+
+	position: absolute;
+	border: var(--border);
+	background: var(--primary-color);
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	padding: 1rem;
+	width: 27rem;
+	top: 3rem;
+	left: -13rem;
+}
+
+.category-header_selection-item {
+	padding: 0.5rem 1rem;
+	border-radius: 1rem;
+	border: 0.3rem solid #ffffff00;
+
+	cursor: pointer;
+}
+.category-header_selection-item:hover {
+	border: var(--border);
+	background: #ffffff21;
+}
+
+
+
+.category-header_searchbox form {
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+  justify-content: space-between;
+	background: var(--primary-color);
+	border: var(--border);
+	border-radius: 1rem;
+	padding: 0.5rem 1rem;
+}
+
+.category-header_searchbox-input {
+	border: none;
+	outline: none;
+	background: transparent;
+	color: #fff;
+}
+.category-header_searchbox-input::placeholder {
+	color: #fff;
+}
+
+.category-header_searchbox-icon {
+	cursor: pointer;
+}
+
+.category-header_row-btn,
+.category-header_column-btn,
+.category-header_searchbox svg {
+	width: 2rem;
+}

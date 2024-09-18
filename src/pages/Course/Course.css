@@ -388,7 +388,7 @@
 
 }
 .acoordion_body_wrapper:hover {
-	background: #ffffff57;
+	background: var(--background);
 
 }
 .accordion_right {

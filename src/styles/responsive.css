@@ -30,12 +30,11 @@
 		/* gap: 5rem; */
 	}
 
-
 	.course_pagelink {
 		margin-bottom: 0;
 	}
 	.teacher_position {
-		width:auto;
+		width: auto;
 	}
 }
 @media screen and (max-width: 768px) {
@@ -56,7 +55,7 @@
 	}
 	.nav-list--open {
 		height: auto;
-        padding-bottom: 2rem;
+		padding-bottom: 2rem;
 	}
 
 	.nav-item {
@@ -90,6 +89,10 @@
 	}
 	.category-header_searchbox {
 		width: 100%;
+	}
+
+	.category-header_selection-list {
+		left: 0;
 	}
 }
 
