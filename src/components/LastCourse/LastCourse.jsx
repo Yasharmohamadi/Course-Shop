@@ -34,54 +34,8 @@ export default function LastCourse() {
 							/>
 						</NavLink>
 					</div>
-					<div className="col-12 col-md-6 col-xl-4">
-						<NavLink to="/course/jango">
-							<CourseBox
-								title="دوره متخصص جنگو"
-								img="/images/courses/jango.png1"
-							/>
-						</NavLink>
-					</div>
-					<div className="col-12 col-md-6 col-xl-4">
-						<NavLink to="/course/python">
-							<CourseBox
-								title="دوره آموزشی پایتون"
-								img="/images/courses/python.png1"
-							/>
-						</NavLink>
-					</div>
-					<div className="col-12 col-md-6 col-xl-4">
-						<NavLink to="/course/youtuber">
-							<CourseBox
-								title="دوره یوتیوبر تخصصی"
-								img="/images/courses/youtuber.png1"
-							/>
-						</NavLink>
-					</div>
-					<div className="col-12 col-md-6 col-xl-4">
-						<NavLink to="/course/nextjs">
-							<CourseBox
-								title="دوره متخصص نکست"
-								img="/images/courses/nextjs.webp1"
-							/>
-						</NavLink>
-					</div>
-					<div className="col-12 col-md-6 col-xl-4">
-						<NavLink to="/course/nextjs">
-							<CourseBox
-								title="دوره متخصص نکست"
-								img="/images/courses/python2.webp1"
-							/>
-						</NavLink>
-					</div>
-					<div className="col-12 col-md-6 col-xl-4">
-						<NavLink to="/course/nextjs">
-							<CourseBox
-								title="دوره متخصص نکست"
-								img="/images/courses/pythonmini.webp1"
-							/>
-						</NavLink>
-					</div>
+
+
 				</div>
 			</div>
 		</div>

@@ -52,6 +52,14 @@
 	height: 100%;
 }
 
+.course_main-left {
+	position: relative;
+}
+.course_main-left-wrapper {
+	position: sticky;
+	top: 10rem;
+}
+
 .course_progress {
 	border: var(--border);
 	border-radius: 1rem;
@@ -141,7 +149,8 @@
 
 .course_intro_btn:hover,
 .course_pagelink_wrapper:hover .course_pagelink_url,
-.teacher_position:hover {
+.teacher_position:hover,
+.comments_btn:hover {
 	text-shadow: 0 0 1rem rgba(0, 0, 0, 1);
 }
 
@@ -162,6 +171,8 @@
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 1rem;
 }
 .techaer_profile {
 	cursor: pointer;
@@ -189,7 +200,6 @@
 }
 .teacher_position {
 	cursor: pointer;
-
 	background: #ffffff57;
 	border: var(--border);
 	border-radius: 1rem;
@@ -197,6 +207,7 @@
 	display: flex;
 	align-items: center;
 	gap: 0.5rem;
+	justify-content: center;
 }
 .teacher_position img {
 	width: 2rem;
@@ -295,7 +306,7 @@
 	/* color: #fff; */
 	display: flex;
 	flex-direction: row;
-	align-items:center;
+	align-items: center;
 	justify-content: space-between;
 	padding: 1.5rem;
 }
@@ -303,4 +314,41 @@
 .course_pagelink_text {
 	font-size: 2rem;
 	margin-right: 0.5rem;
+}
+
+.course_comments {
+	background: var(--background);
+	border: var(--border);
+	border-radius: 1rem;
+	padding: 3rem 2rem;
+	margin-top: 3rem;
+	color: #fff;
+}
+.comments_title {
+	font-size: 2rem;
+}
+.comments_textarea {
+	margin: 2rem 0 1rem 0;
+	outline: none;
+	padding: 1.5rem;
+	background: var(--primary-color);
+	border-radius: 1rem;
+	color: #fff;
+	width: 100%;
+	resize: vertical;
+	max-height: 40rem;
+	min-height: 15rem;
+	border: var(--border);
+}
+
+.comments_textarea::placeholder {
+	color: #ffffffa3;
+}
+.comments_btn {
+	background: #000;
+	background: #ffffff57;
+	border-radius: 1rem;
+	border: var(--border);
+	padding: 1rem 1.5rem;
+	color: #fff;
 }

@@ -58,30 +58,7 @@ export default function PopularCourse() {
 							/>
 						</NavLink>
 					</div>
-					<div className="col-12 col-md-6 col-xl-4">
-						<NavLink to="/course/js">
-							<CourseBox
-								title="دوره متخصص نکست"
-								img="/images/courses/exp.webp1"
-							/>
-						</NavLink>
-					</div>
-					<div className="col-12 col-md-6 col-xl-4">
-						<NavLink to="/course/js">
-							<CourseBox
-								title="دوره متخصص نکست"
-								img="/images/courses/algorithm.webp1"
-							/>
-						</NavLink>
-					</div>
-					<div className="col-12 col-md-6 col-xl-4">
-						<NavLink to="/course/js">
-							<CourseBox
-								title="دوره متخصص نکست"
-								img="/images/courses/docker.webp1"
-							/>
-						</NavLink>
-					</div>
+
 				</div>
 			</div>
 		</div>
