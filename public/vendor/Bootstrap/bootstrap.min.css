@@ -4215,7 +4215,7 @@ fieldset:disabled .btn {
 		border-bottom-left-radius: 0;
 	}
 }
-.accordion {
+/* .accordion {
 	--bs-accordion-color: #000;
 	--bs-accordion-bg: #fff;
 	--bs-accordion-transition: color 0.15s ease-in-out,
@@ -4347,7 +4347,7 @@ fieldset:disabled .btn {
 }
 .accordion-flush .accordion-item .accordion-button {
 	border-radius: 0;
-}
+} */
 .breadcrumb {
 	--bs-breadcrumb-padding-x: 0;
 	--bs-breadcrumb-padding-y: 0;

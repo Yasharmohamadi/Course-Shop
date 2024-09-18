@@ -354,10 +354,63 @@
 }
 
 .course_acoordion {
-	background: var(--background);
 	border-radius: 1rem;
 	border: var(--border);
 	padding: 3rem 2rem;
 	margin-top: 3rem;
+	color: #fff;
+	background: var(--background);
+}
+
+.accordion_item {
+	border-radius: 1rem;
+	margin-top: 1rem;
+	border: var(--border);
+	overflow: hidden;
+}
+.accordion-button {
+	color: #fff;
+	background: #ffffff57;
+	border: none;
+	outline: none;
+	width: 100%;
+	padding: 2rem 1rem;
+	text-align: right;
+}
+.acoordion_body_wrapper {
+	padding: 1rem;
+	background: var(--primary-color);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+
+}
+.acoordion_body_wrapper:hover {
+	background: #ffffff57;
+
+}
+.accordion_right {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+}
+.accordion_right svg {
+	width: 2rem;
+}
+.accordion_number {
+	background: #ffffff57;
+	border-radius: 50%;
+	width: 3rem;
+	height: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.accordion_link {
 	color: #fff;
 }

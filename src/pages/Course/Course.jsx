@@ -4,7 +4,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import BreadCrumb from "../../components/BreadCrumb/BreadCrumb";
 import CourseDetailBox from "../../components/CourseDetailBox/CourseDetailBox";
-import Accordion from 'react-bootstrap/Accordion';
+import Accordion from "react-bootstrap/Accordion";
 import { NavLink } from "react-router-dom";
 
 export default function Course() {
@@ -197,29 +197,259 @@ export default function Course() {
 						<div className="course_acoordion">
 							<Accordion defaultActiveKey="0">
 								<Accordion.Item eventKey="0" className="accordion_item">
-									<Accordion.Header>Accordion Item #1</Accordion.Header>
-									<Accordion.Body>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-										do eiusmod tempor incididunt ut labore et dolore magna
-										aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-										ullamco laboris nisi ut aliquip ex ea commodo consequat.
-										Duis aute irure dolor in reprehenderit in voluptate velit
-										esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-										occaecat cupidatat non proident, sunt in culpa qui officia
-										deserunt mollit anim id est laborum.
+									<Accordion.Header className="accordion_header">
+										مقدمه و معرفی
+									</Accordion.Header>
+									<Accordion.Body className="accordion_body">
+										<div className="acoordion_body_wrapper">
+											<div class="accordion_right">
+												<span class="accordion_number">1</span>
+												<svg
+													aria-hidden="true"
+													focusable="false"
+													data-prefix="fab"
+													data-icon="youtube"
+													role="img"
+													xmlns="http://www.w3.org/2000/svg"
+													viewBox="0 0 576 512"
+													data-fa-i2svg=""
+												>
+													<path
+														fill="#fff"
+														d="M549.7 124.1c-6.281-23.65-24.79-42.28-48.28-48.6C458.8 64 288 64 288 64S117.2 64 74.63 75.49c-23.5 6.322-42 24.95-48.28 48.6-11.41 42.87-11.41 132.3-11.41 132.3s0 89.44 11.41 132.3c6.281 23.65 24.79 41.5 48.28 47.82C117.2 448 288 448 288 448s170.8 0 213.4-11.49c23.5-6.321 42-24.17 48.28-47.82 11.41-42.87 11.41-132.3 11.41-132.3s0-89.44-11.41-132.3zm-317.5 213.5V175.2l142.7 81.21-142.7 81.2z"
+													></path>
+												</svg>
+												<a href="#" class="accordion_link">
+													معرفی دوره
+												</a>
+											</div>
+											<div class="accordion_left">
+												<span>18:34</span>
+											</div>
+										</div>
+										<div className="acoordion_body_wrapper">
+											<div class="accordion_right">
+												<span class="accordion_number">2</span>
+												<svg
+													aria-hidden="true"
+													focusable="false"
+													data-prefix="fab"
+													data-icon="youtube"
+													role="img"
+													xmlns="http://www.w3.org/2000/svg"
+													viewBox="0 0 576 512"
+													data-fa-i2svg=""
+												>
+													<path
+														fill="#fff"
+														d="M549.7 124.1c-6.281-23.65-24.79-42.28-48.28-48.6C458.8 64 288 64 288 64S117.2 64 74.63 75.49c-23.5 6.322-42 24.95-48.28 48.6-11.41 42.87-11.41 132.3-11.41 132.3s0 89.44 11.41 132.3c6.281 23.65 24.79 41.5 48.28 47.82C117.2 448 288 448 288 448s170.8 0 213.4-11.49c23.5-6.321 42-24.17 48.28-47.82 11.41-42.87 11.41-132.3 11.41-132.3s0-89.44-11.41-132.3zm-317.5 213.5V175.2l142.7 81.21-142.7 81.2z"
+													></path>
+												</svg>
+												<a href="#" class="accordion_link">
+													مقدمه
+												</a>
+											</div>
+											<div class="accordion_left">
+												<span>18:34</span>
+											</div>
+										</div>
 									</Accordion.Body>
 								</Accordion.Item>
-								<Accordion.Item eventKey="1">
-									<Accordion.Header>Accordion Item #2</Accordion.Header>
-									<Accordion.Body>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-										do eiusmod tempor incididunt ut labore et dolore magna
-										aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-										ullamco laboris nisi ut aliquip ex ea commodo consequat.
-										Duis aute irure dolor in reprehenderit in voluptate velit
-										esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-										occaecat cupidatat non proident, sunt in culpa qui officia
-										deserunt mollit anim id est laborum.
+								<Accordion.Item eventKey="1" className="accordion_item">
+									<Accordion.Header className="accordion_header">
+										فصل اول
+									</Accordion.Header>
+									<Accordion.Body className="accordion_body">
+										<div className="acoordion_body_wrapper">
+											<div class="accordion_right">
+												<span class="accordion_number">1</span>
+												<svg
+													aria-hidden="true"
+													focusable="false"
+													data-prefix="fab"
+													data-icon="youtube"
+													role="img"
+													xmlns="http://www.w3.org/2000/svg"
+													viewBox="0 0 576 512"
+													data-fa-i2svg=""
+												>
+													<path
+														fill="#fff"
+														d="M549.7 124.1c-6.281-23.65-24.79-42.28-48.28-48.6C458.8 64 288 64 288 64S117.2 64 74.63 75.49c-23.5 6.322-42 24.95-48.28 48.6-11.41 42.87-11.41 132.3-11.41 132.3s0 89.44 11.41 132.3c6.281 23.65 24.79 41.5 48.28 47.82C117.2 448 288 448 288 448s170.8 0 213.4-11.49c23.5-6.321 42-24.17 48.28-47.82 11.41-42.87 11.41-132.3 11.41-132.3s0-89.44-11.41-132.3zm-317.5 213.5V175.2l142.7 81.21-142.7 81.2z"
+													></path>
+												</svg>
+												<a href="#" class="accordion_link">
+													قسمت اول
+												</a>
+											</div>
+											<div class="accordion_left">
+												<span>18:34</span>
+											</div>
+										</div>
+										<div className="acoordion_body_wrapper">
+											<div class="accordion_right">
+												<span class="accordion_number">1</span>
+												<svg
+													aria-hidden="true"
+													focusable="false"
+													data-prefix="fab"
+													data-icon="youtube"
+													role="img"
+													xmlns="http://www.w3.org/2000/svg"
+													viewBox="0 0 576 512"
+													data-fa-i2svg=""
+												>
+													<path
+														fill="#fff"
+														d="M549.7 124.1c-6.281-23.65-24.79-42.28-48.28-48.6C458.8 64 288 64 288 64S117.2 64 74.63 75.49c-23.5 6.322-42 24.95-48.28 48.6-11.41 42.87-11.41 132.3-11.41 132.3s0 89.44 11.41 132.3c6.281 23.65 24.79 41.5 48.28 47.82C117.2 448 288 448 288 448s170.8 0 213.4-11.49c23.5-6.321 42-24.17 48.28-47.82 11.41-42.87 11.41-132.3 11.41-132.3s0-89.44-11.41-132.3zm-317.5 213.5V175.2l142.7 81.21-142.7 81.2z"
+													></path>
+												</svg>
+												<a href="#" class="accordion_link">
+													قسمت اول
+												</a>
+											</div>
+											<div class="accordion_left">
+												<span>18:34</span>
+											</div>
+										</div>
+										<div className="acoordion_body_wrapper">
+											<div class="accordion_right">
+												<span class="accordion_number">1</span>
+												<svg
+													aria-hidden="true"
+													focusable="false"
+													data-prefix="fab"
+													data-icon="youtube"
+													role="img"
+													xmlns="http://www.w3.org/2000/svg"
+													viewBox="0 0 576 512"
+													data-fa-i2svg=""
+												>
+													<path
+														fill="#fff"
+														d="M549.7 124.1c-6.281-23.65-24.79-42.28-48.28-48.6C458.8 64 288 64 288 64S117.2 64 74.63 75.49c-23.5 6.322-42 24.95-48.28 48.6-11.41 42.87-11.41 132.3-11.41 132.3s0 89.44 11.41 132.3c6.281 23.65 24.79 41.5 48.28 47.82C117.2 448 288 448 288 448s170.8 0 213.4-11.49c23.5-6.321 42-24.17 48.28-47.82 11.41-42.87 11.41-132.3 11.41-132.3s0-89.44-11.41-132.3zm-317.5 213.5V175.2l142.7 81.21-142.7 81.2z"
+													></path>
+												</svg>
+												<a href="#" class="accordion_link">
+													قسمت اول
+												</a>
+											</div>
+											<div class="accordion_left">
+												<span>18:34</span>
+											</div>
+										</div>
+										<div className="acoordion_body_wrapper">
+											<div class="accordion_right">
+												<span class="accordion_number">1</span>
+												<svg
+													aria-hidden="true"
+													focusable="false"
+													data-prefix="fab"
+													data-icon="youtube"
+													role="img"
+													xmlns="http://www.w3.org/2000/svg"
+													viewBox="0 0 576 512"
+													data-fa-i2svg=""
+												>
+													<path
+														fill="#fff"
+														d="M549.7 124.1c-6.281-23.65-24.79-42.28-48.28-48.6C458.8 64 288 64 288 64S117.2 64 74.63 75.49c-23.5 6.322-42 24.95-48.28 48.6-11.41 42.87-11.41 132.3-11.41 132.3s0 89.44 11.41 132.3c6.281 23.65 24.79 41.5 48.28 47.82C117.2 448 288 448 288 448s170.8 0 213.4-11.49c23.5-6.321 42-24.17 48.28-47.82 11.41-42.87 11.41-132.3 11.41-132.3s0-89.44-11.41-132.3zm-317.5 213.5V175.2l142.7 81.21-142.7 81.2z"
+													></path>
+												</svg>
+												<a href="#" class="accordion_link">
+													قسمت اول
+												</a>
+											</div>
+											<div class="accordion_left">
+												<span>18:34</span>
+											</div>
+										</div>
+									</Accordion.Body>
+								</Accordion.Item>
+								<Accordion.Item eventKey="2" className="accordion_item">
+									<Accordion.Header className="accordion_header">
+										فصل دوم
+									</Accordion.Header>
+									<Accordion.Body className="accordion_body">
+
+										<div className="acoordion_body_wrapper">
+											<div class="accordion_right">
+												<span class="accordion_number">1</span>
+												<svg
+													aria-hidden="true"
+													focusable="false"
+													data-prefix="fab"
+													data-icon="youtube"
+													role="img"
+													xmlns="http://www.w3.org/2000/svg"
+													viewBox="0 0 576 512"
+													data-fa-i2svg=""
+												>
+													<path
+														fill="#fff"
+														d="M549.7 124.1c-6.281-23.65-24.79-42.28-48.28-48.6C458.8 64 288 64 288 64S117.2 64 74.63 75.49c-23.5 6.322-42 24.95-48.28 48.6-11.41 42.87-11.41 132.3-11.41 132.3s0 89.44 11.41 132.3c6.281 23.65 24.79 41.5 48.28 47.82C117.2 448 288 448 288 448s170.8 0 213.4-11.49c23.5-6.321 42-24.17 48.28-47.82 11.41-42.87 11.41-132.3 11.41-132.3s0-89.44-11.41-132.3zm-317.5 213.5V175.2l142.7 81.21-142.7 81.2z"
+													></path>
+												</svg>
+												<a href="#" class="accordion_link">
+													قسمت اول
+												</a>
+											</div>
+											<div class="accordion_left">
+												<span>18:34</span>
+											</div>
+										</div>
+										<div className="acoordion_body_wrapper">
+											<div class="accordion_right">
+												<span class="accordion_number">1</span>
+												<svg
+													aria-hidden="true"
+													focusable="false"
+													data-prefix="fab"
+													data-icon="youtube"
+													role="img"
+													xmlns="http://www.w3.org/2000/svg"
+													viewBox="0 0 576 512"
+													data-fa-i2svg=""
+												>
+													<path
+														fill="#fff"
+														d="M549.7 124.1c-6.281-23.65-24.79-42.28-48.28-48.6C458.8 64 288 64 288 64S117.2 64 74.63 75.49c-23.5 6.322-42 24.95-48.28 48.6-11.41 42.87-11.41 132.3-11.41 132.3s0 89.44 11.41 132.3c6.281 23.65 24.79 41.5 48.28 47.82C117.2 448 288 448 288 448s170.8 0 213.4-11.49c23.5-6.321 42-24.17 48.28-47.82 11.41-42.87 11.41-132.3 11.41-132.3s0-89.44-11.41-132.3zm-317.5 213.5V175.2l142.7 81.21-142.7 81.2z"
+													></path>
+												</svg>
+												<a href="#" class="accordion_link">
+													قسمت اول
+												</a>
+											</div>
+											<div class="accordion_left">
+												<span>18:34</span>
+											</div>
+										</div>
+										<div className="acoordion_body_wrapper">
+											<div class="accordion_right">
+												<span class="accordion_number">1</span>
+												<svg
+													aria-hidden="true"
+													focusable="false"
+													data-prefix="fab"
+													data-icon="youtube"
+													role="img"
+													xmlns="http://www.w3.org/2000/svg"
+													viewBox="0 0 576 512"
+													data-fa-i2svg=""
+												>
+													<path
+														fill="#fff"
+														d="M549.7 124.1c-6.281-23.65-24.79-42.28-48.28-48.6C458.8 64 288 64 288 64S117.2 64 74.63 75.49c-23.5 6.322-42 24.95-48.28 48.6-11.41 42.87-11.41 132.3-11.41 132.3s0 89.44 11.41 132.3c6.281 23.65 24.79 41.5 48.28 47.82C117.2 448 288 448 288 448s170.8 0 213.4-11.49c23.5-6.321 42-24.17 48.28-47.82 11.41-42.87 11.41-132.3 11.41-132.3s0-89.44-11.41-132.3zm-317.5 213.5V175.2l142.7 81.21-142.7 81.2z"
+													></path>
+												</svg>
+												<a href="#" class="accordion_link">
+													قسمت اول
+												</a>
+											</div>
+											<div class="accordion_left">
+												<span>18:34</span>
+											</div>
+										</div>
 									</Accordion.Body>
 								</Accordion.Item>
 							</Accordion>
