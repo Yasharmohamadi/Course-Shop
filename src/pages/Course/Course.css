@@ -140,7 +140,7 @@
 }
 
 .course_intro_btn:hover,
-.course_pagelink_url:hover,
+.course_pagelink_wrapper:hover .course_pagelink_url,
 .teacher_position:hover {
 	text-shadow: 0 0 1rem rgba(0, 0, 0, 1);
 }
@@ -226,7 +226,7 @@
 
 .course_register_content,
 .course_students_wrapper,
-.course_pagelink_url {
+.course_pagelink_wrapper {
 	background: #ffffff57;
 	border-radius: 1rem;
 	border: var(--border);
@@ -237,10 +237,11 @@
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
 	gap: 1rem;
 	width: 100%;
 }
-.course_pagelink_url {
+.course_pagelink_wrapper {
 	cursor: pointer;
 }
 .course_register svg,
@@ -290,12 +291,12 @@
 	gap: 1rem;
 }
 
-.course_pagelink {
+.course_pagelink_wrapper {
 	/* color: #fff; */
 	display: flex;
-	flex-direction: column;
-	align-items: start;
-	gap: 1rem;
+	flex-direction: row;
+	align-items:center;
+	justify-content: space-between;
 	padding: 1.5rem;
 }
 

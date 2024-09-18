@@ -23,11 +23,9 @@
 		flex-direction: column-reverse;
 		/* gap: 5rem; */
 	}
-	.course_main {
-		flex-direction: column-reverse;
-	}
 
-	.course_students {
+
+	.course_pagelink {
 		margin-bottom: 0;
 	}
 }
