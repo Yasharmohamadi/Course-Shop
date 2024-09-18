@@ -16,6 +16,7 @@ html {
 
 :root {
 	--primary-color: #20545a;
+	--primary-color-light: #20545a4f;
 	--yellow-coloe: #898d18;
 	--section-bg-color: #fff;
 	--app-bg-color: #e1f5fe;

@@ -8,10 +8,10 @@
 	color: #fff;
 	cursor: pointer;
 	transition: all 50ms ease;
-	background:var(--bakground);
+	background: var(--background);
 }
 .coursebox:hover {
-	box-shadow: 0 0 1rem var(--yellow-coloe);
+	box-shadow: 0 0 3rem #ffffff4d;
 }
 .coursebox_img {
 	border-radius: 0 0 1rem 1rem;

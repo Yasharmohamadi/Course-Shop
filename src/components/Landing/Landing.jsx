@@ -10,6 +10,7 @@ export default function Landing() {
 				<h2 className="landing-title">
 					نوژه
 					<Typewriter
+					className="landing-title"
 						onInit={(typewriter) => {
 							typewriter
 								.typeString(" ، نوظهور در آموزش")

@@ -1,5 +1,5 @@
 .section-header {
-    margin-top: 9rem;
+    margin-top: 5rem;
 
 	display: flex;
 	flex-direction: row;
@@ -23,7 +23,7 @@
 .section-header_title::after {
 	content: "";
 	position: absolute;
-	background:var(--yellow-coloe);
+    background: #ffffff57;
 	width: 2.5rem;
 	height: 2.5rem;
 	transform: rotate(45deg);
@@ -60,7 +60,7 @@
 .section-header_more::after {
     content: "";
     position: absolute;
-    background:var(--yellow-coloe);
+    background: #ffffff57;
     width: 2.5rem;
     height: 2.5rem;
     transform: rotate(45deg);
