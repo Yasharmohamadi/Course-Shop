@@ -1,0 +1,12 @@
+
+.allcourses-row {
+	display: flex;
+	flex-direction: row;
+}
+.allcourses-column {
+	display: flex;
+	flex-direction: column;
+}
+.allcourses-column div {
+	width: 100%;
+}
