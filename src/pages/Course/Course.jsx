@@ -6,6 +6,8 @@ import BreadCrumb from "../../components/BreadCrumb/BreadCrumb";
 import CourseDetailBox from "../../components/CourseDetailBox/CourseDetailBox";
 import Accordion from "react-bootstrap/Accordion";
 import { NavLink } from "react-router-dom";
+import Input from "../../components/Input/Input";
+
 
 export default function Course() {
 	return (
@@ -456,12 +458,14 @@ export default function Course() {
 						</div>
 						<div className="course_comments">
 							<h4 className="comments_title">دیدگاهتان را بنویسید</h4>
-							<textarea
-								className="comments_textarea"
-								type="text"
-								placeholder="لطفا دیدگاه خود را به اشتراک بگذارید ..."
-								rows={5}
+							<Input 
+							className="comments_textarea"
+							type="text"
+							placeholder="لطفا دیدگاه خود را به اشتراک بگذارید ..."
+							rows={5}
+							element='textarea'
 							/>
+
 							<button className="comments_btn">ثبت دیدگاه</button>
 						</div>
 					</div>

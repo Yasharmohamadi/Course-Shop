@@ -42,7 +42,6 @@ export default function Login() {
 						</div>
 
 						<div className="input_wrapper">
-
 							<Input
 								className="form_input"
 								maxLength="60"

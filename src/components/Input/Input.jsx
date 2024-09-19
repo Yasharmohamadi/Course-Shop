@@ -10,7 +10,12 @@ export default function Input(props) {
 				placeholder={props.placeholder}
 			/>
 		) : (
-			<textarea />
+			<textarea
+				className={props.className}
+				type={props.type}
+				placeholder={props.placeholder}
+				rows={props.rows}
+			/>
 		);
 
 	return <div>{element}</div>;
