@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import "./CourseBox.css";
+import Loader from "../../components/Loader/Loader";
 
 export default function CourseBox({ title, img }) {
+	const [showImg, setShowImg] = useState(false);
 
 	return (
 		<div className="coursebox">
@@ -10,8 +12,9 @@ export default function CourseBox({ title, img }) {
 					className="coursebox_img"
 					alt=""
 					src="/images/courses/algorithm.webp"
+					onLoad={() => setShowImg(true)}
 				/>
-
+				{!showImg && <Loader />}
 			</div>
 
 			<div className="coursebox_details">
