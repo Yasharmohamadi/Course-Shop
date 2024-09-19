@@ -1,0 +1,98 @@
+.register_wrapper {
+	background: var(--background);
+	border: var(--border);
+	border-radius: 1rem;
+	padding: 2rem 1rem;
+	margin-top: 4rem;
+	color: #fff;
+	/* min-width: 30rem; */
+	max-width: 50rem;
+	margin: 4rem auto;
+}
+
+.register_from {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+}
+.form_title {
+	font-size: 2.2rem;
+	font-family: "IRANSans Bold";
+}
+.form_login_route {
+	background: #ffffff21;
+	border: var(--border);
+	border-radius: 1rem;
+	padding: 1rem;
+	cursor: default;
+	margin: 1rem 0;
+}
+.form_login_route a {
+	color: #fff;
+	margin-right: 0.5rem;
+}
+.form_login_route a:hover {
+	color: #fff;
+	margin-right: 0.5rem;
+	text-shadow: 0 0 1rem rgba(0, 0, 0, 1);
+}
+.input_wrapper {
+	border: var(--border);
+	background: var(--primary-color);
+	padding: 0.5rem 1rem;
+	width: 100%;
+	border-radius: 1rem;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: center;
+}
+.input_wrapper svg {
+	width: 2rem;
+	margin-left: 0.5rem;
+}
+.form_input {
+	outline: none;
+	border: none;
+	color: #fff;
+	background: transparent;
+	width: 100%;
+}
+.form_input::placeholder {
+	color: #ffffff41;
+}
+
+.form_btn {
+	width: 100%;
+	border: var(--border);
+	outline: none;
+	background: #ffffff41;
+	border-radius: 1rem;
+	margin-top: 1rem;
+	padding: 1rem;
+	color: #fff;
+}
+.form_btn:hover {
+	text-shadow: 0 0 1rem rgba(0, 0, 0, 1);
+}
+.form_btn svg {
+	width: 2rem;
+	margin-right: 1rem;
+}
+
+.register_rule {
+	margin-top: 3rem;
+	padding: 0 1rem;
+}
+.form_rule_title {
+}
+.form_rule_list {
+	margin-top: 1rem;
+	margin-right: 3rem;
+}
+.form_rule_list_item {
+	padding: 0.5rem;
+	font-size: 1.2rem;
+	list-style-type: disc;
+}

@@ -67,16 +67,14 @@
 }
 
 .nav-serach,
-.nav-basket,
-.nav-user {
+.nav-basket {
 	cursor: pointer;
 	margin-right: 0.6rem;
 	color: #fff;
 	font-size: 2rem;
 }
 .nav-serach svg,
-.nav-basket svg,
-.nav-user svg {
+.nav-basket svg {
 	width: 2rem;
 	height: 2rem;
 }
@@ -101,6 +99,22 @@
 	position: absolute;
 	top: -1rem;
 	right: -1rem;
+}
+
+.nav-user {
+	border: var(--border);
+	/* border: 0.3rem solid #fff; */
+	background: var(--primary-color);
+	padding: .5rem 1rem;
+	color: #fff;
+	border-radius: 0.5rem;
+	cursor: pointer;
+}
+.nav-user a{
+	color: #fff;
+}
+.nav-user:hover{
+	background: #ffffff21;
 }
 
 /* hamberger menu */
