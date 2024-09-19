@@ -1,0 +1,27 @@
+.sublink_wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row;
+	padding: 2rem 1rem 0 1rem;
+}
+.checkbox_wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row;
+	gap: 0.5rem;
+}
+.checkbox_lebel, .sublink_wrapper a  {
+	font-size: 1.5rem;
+	cursor: pointer;
+    color: #fff;
+}
+.checkbox_input {
+	cursor: pointer;
+}
+
+.checkbox_lebel:hover,
+.sublink_wrapper a:hover {
+	text-shadow: 0 0 1rem rgba(0, 0, 0, 1);
+}

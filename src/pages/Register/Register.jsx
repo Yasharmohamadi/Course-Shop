@@ -14,11 +14,16 @@ export default function Register() {
 					<form className="register_from">
 						<h2 className="form_title">ساخت حساب کاربری</h2>
 						<div className="form_login_route">
-							<span>قبلا ثبت نام کردید؟</span>
+							<span>قبلا ثبت نام کردی؟</span>
 							<Link to="/login">ورود</Link>
 						</div>
 						<div className="input_wrapper">
-							<input className="form_input" maxLength='60'type='text'  placeholder="نام کاربری" />
+							<input
+								className="form_input"
+								maxLength="60"
+								type="text"
+								placeholder="نام کاربری"
+							/>
 							<svg
 								aria-hidden="true"
 								focusable="false"
@@ -35,7 +40,12 @@ export default function Register() {
 							</svg>{" "}
 						</div>
 						<div className="input_wrapper">
-							<input className="form_input" maxLength='60' type='email' placeholder="ایمیل" />
+							<input
+								className="form_input"
+								maxLength="60"
+								type="email"
+								placeholder="ایمیل"
+							/>
 							<svg
 								aria-hidden="true"
 								focusable="false"
@@ -52,7 +62,12 @@ export default function Register() {
 							</svg>{" "}
 						</div>
 						<div className="input_wrapper">
-							<input className="form_input" maxLength='60'type='password'  placeholder="رمز عبور" />
+							<input
+								className="form_input"
+								maxLength="60"
+								type="password"
+								placeholder="رمز عبور"
+							/>
 							<svg
 								aria-hidden="true"
 								focusable="false"
@@ -69,7 +84,8 @@ export default function Register() {
 							</svg>{" "}
 						</div>
 						<button className="form_btn">
-							ثبت نام
+                        ثبت نام
+
 							<svg
 								aria-hidden="true"
 								focusable="false"
