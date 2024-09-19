@@ -40,7 +40,7 @@ export default function CourseBox({ title, img }) {
 					</span>
 					<div className="coursebox_rate">
 						<img src="/images/svgs/star.svg" className="" />
-						<img src="/images/svgs/star_fill.svg" className="" />
+						<img src="/images/svgs/star.svg" className="" />
 						<img src="/images/svgs/star_fill.svg" className="" />
 						<img src="/images/svgs/star_fill.svg" className="" />
 						<img src="/images/svgs/star_fill.svg" className="" />
