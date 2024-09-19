@@ -3,6 +3,7 @@ import "./Login.css";
 import { Link } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
+import Input from "../../components/Input/Input";
 
 export default function Login() {
 	return (
@@ -17,11 +18,12 @@ export default function Login() {
 							<Link to="/register">ثبت نام</Link>
 						</div>
 						<div className="input_wrapper">
-							<input
+							<Input
 								className="form_input"
 								maxLength="60"
 								type="text"
 								placeholder="نام کاربری یا ایمیل"
+								element="input"
 							/>
 							<svg
 								aria-hidden="true"
@@ -40,11 +42,13 @@ export default function Login() {
 						</div>
 
 						<div className="input_wrapper">
-							<input
+
+							<Input
 								className="form_input"
 								maxLength="60"
 								type="password"
 								placeholder="رمز عبور"
+								element="input"
 							/>
 							<svg
 								aria-hidden="true"
@@ -86,7 +90,7 @@ export default function Login() {
 							</label>
 							<input type="checkbox" className="checkbox_input" id="checkbox" />
 						</div>
-							<Link to="/recovery">رمز عبورت رو فراموش کردی؟</Link>
+						<Link to="/recovery">رمز عبورت رو فراموش کردی؟</Link>
 					</div>
 					<div className="register_rule">
 						<span className="form_rule_title">سلام کاربر محترم:</span>
