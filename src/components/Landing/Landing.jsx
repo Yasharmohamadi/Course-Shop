@@ -5,6 +5,7 @@ import LandingCounter from '../LandingCounter/LandingCounter'
 
 export default function Landing() {
 	return (
+		
 		<div className="landing">
 			<div className="container landing-wrapper">
 				<h2 className="landing-title">

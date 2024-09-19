@@ -10,12 +10,21 @@
 	transition: all 50ms ease;
 	background: var(--background);
 }
+.coursebox_img_wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 21rem;
+
+
+}
 .coursebox:hover {
 	box-shadow: 0 0 3rem #ffffff4d;
 }
 .coursebox_img {
 	border-radius: 0 0 1rem 1rem;
-	height: 21rem;
+	height: 100%;
+	width: 100%;
 }
 
 .coursebox_details {

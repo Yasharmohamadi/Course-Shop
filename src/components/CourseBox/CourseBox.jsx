@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import "./CourseBox.css";
 
 export default function CourseBox({ title, img }) {
+
 	return (
 		<div className="coursebox">
-			<img className="coursebox_img" src={img} alt="" />
+			<div className="coursebox_img_wrapper">
+				<img
+					className="coursebox_img"
+					alt=""
+					src="/images/courses/algorithm.webp"
+				/>
+
+			</div>
+
 			<div className="coursebox_details">
 				<h3 className="coursebox_title">{title}</h3>
 				<div className="coursebox_info-wrapper">
