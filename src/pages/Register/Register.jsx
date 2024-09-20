@@ -25,8 +25,9 @@ export default function Register() {
 								type="text"
 								placeholder="نام کاربری"
 								element="input"
-							/>
+							></Input>
 							<svg
+								id="input-svg"
 								aria-hidden="true"
 								focusable="false"
 								data-prefix="fas"
@@ -43,6 +44,7 @@ export default function Register() {
 						</div>
 						<div className="input_wrapper">
 							<Input
+							
 								className="form_input"
 								maxLength="60"
 								type="email"

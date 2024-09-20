@@ -47,19 +47,20 @@
 	border-radius: 1rem;
 	display: flex;
 	justify-content: space-between;
-	flex-direction: row;
+	flex-direction: row;	height: 4.5rem;
 	align-items: center;
 }
 .input_wrapper svg {
 	width: 2rem;
 	margin-left: 0.5rem;
+	flex-basis: 5%;
 }
 .form_input {
 	outline: none;
 	border: none;
 	color: #fff;
 	background: transparent;
-	width: 100%;
+
 }
 .form_input::placeholder {
 	color: #ffffff41;
