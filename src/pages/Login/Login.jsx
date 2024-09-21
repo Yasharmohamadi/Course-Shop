@@ -5,6 +5,11 @@ import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import Input from "../../components/Input/Input";
 import Button from "../../components/Button/Button";
+import {
+	requiredValidator,
+	minValidator,
+	maxValidator,
+} from "../../Validators/rules";
 
 export default function Login() {
 	return (
@@ -25,6 +30,11 @@ export default function Login() {
 								type="text"
 								placeholder="نام کاربری یا ایمیل"
 								element="input"
+								validation={[
+									requiredValidator(),
+									minValidator(4),
+									maxValidator(16)
+								]}
 							/>
 							<svg
 								aria-hidden="true"
@@ -49,6 +59,11 @@ export default function Login() {
 								type="password"
 								placeholder="رمز عبور"
 								element="input"
+								validation={[
+									requiredValidator(),
+									minValidator(8),
+									maxValidator(16)
+								]}
 							/>
 							<svg
 								aria-hidden="true"
@@ -65,7 +80,7 @@ export default function Login() {
 								></path>
 							</svg>{" "}
 						</div>
-						<Button className="form_btn" onClick={false} isDisabled={false}>
+						<Button className="form_btn" onClick={false} isDisabled={true}>
 							وارد شو
 							<svg
 								aria-hidden="true"

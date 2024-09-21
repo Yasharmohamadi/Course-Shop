@@ -62,7 +62,6 @@
 	outline: none;
 	color: #fff;
 	background: transparent;
-
 }
 .form_input::placeholder {
 	color: #ffffff41;
@@ -77,6 +76,10 @@
 	margin-top: 1rem;
 	padding: 1rem;
 	color: #fff;
+}
+.form_btn:disabled {
+	opacity: 0.3;
+	cursor: default;
 }
 .form_btn:hover {
 	text-shadow: 0 0 1rem rgba(0, 0, 0, 1);

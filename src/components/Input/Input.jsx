@@ -1,14 +1,17 @@
 import React, { useReducer } from "react";
 import "./Input.css";
+import validator from "../../Validators/validator";
 
 export default function Input(props) {
-	// const[inputValue, setInputValue] =useState('')
+
+	console.log(props.validation);
+
 	const inputReducer = (state, action) => {
 		switch (action.type) {
 			case "CHANGE": {
 				return {
 					value: action.value,
-					isValid: action.isValid,
+					isValid: validator(action.value, action.validation),
 				};
 			}
 			default: {
@@ -26,13 +29,9 @@ export default function Input(props) {
 		dispath({
 			type: "CHANGE",
 			value: event.target.value,
-			isValid: event.target.value.length > 2,
+			validation: props.validation,
+			isValid: event.target.value.length > props.validation,
 		});
-
-		// let inputIcon = document.getElementById("input-svg");
-		// mainInput.isValid
-		// 	? inputIcon.classList.add("input_svg_is_valid")
-		// 	: inputIcon.classList.remove("input_svg_is_valid");
 	};
 	const element =
 		props.element === "input" ? (

@@ -4,6 +4,12 @@ import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import Input from "../../components/Input/Input";
 import Button from "../../components/Button/Button";
+import {
+	requiredValidator,
+	minValidator,
+	maxValidator,
+	emailValidator
+} from "../../Validators/rules";
 import { Link } from "react-router-dom";
 
 export default function Register() {
@@ -26,6 +32,11 @@ export default function Register() {
 								type="text"
 								placeholder="نام کاربری"
 								element="input"
+								validation={[
+									requiredValidator(),
+									minValidator(4),
+									maxValidator(16)
+								]}
 							></Input>
 							<svg
 								// id="input-svg"
@@ -50,6 +61,10 @@ export default function Register() {
 								type="email"
 								placeholder="ایمیل"
 								element="input"
+								validation={[
+									requiredValidator(),
+									emailValidator()
+								]}
 							/>
 							<svg
 								aria-hidden="true"
@@ -73,6 +88,11 @@ export default function Register() {
 								type="password"
 								placeholder="رمز عبور"
 								element="input"
+								validation={[
+									requiredValidator(),
+									minValidator(8),
+									maxValidator(16)
+								]}
 							/>
 							<svg
 								aria-hidden="true"
@@ -89,11 +109,7 @@ export default function Register() {
 								></path>
 							</svg>{" "}
 						</div>
-						<Button
-							className="form_btn"
-							onClick={false}
-							isDisabled={false}
-						>
+						<Button className="form_btn" onClick={false} isDisabled={true}>
 							ثبت نام
 							<svg
 								aria-hidden="true"
