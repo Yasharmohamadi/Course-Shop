@@ -3,7 +3,7 @@ import "./Register.css";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import Input from "../../components/Input/Input";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Register() {
 	return (

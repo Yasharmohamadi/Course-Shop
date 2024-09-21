@@ -1,5 +1,4 @@
-import { type } from "@testing-library/user-event/dist/type";
-import React, { useEffect, useReducer, useState } from "react";
+import React, { useReducer } from "react";
 import "./Input.css";
 
 export default function Input(props) {
@@ -28,7 +27,7 @@ export default function Input(props) {
 		dispath({
 			type: "CHANGE",
 			value: event.target.value,
-			isValid: event.target.value.length >= 8,
+			isValid: event.target.value.length > 7,
 		});
 
 		let inputIcon = document.getElementById("input-svg");
