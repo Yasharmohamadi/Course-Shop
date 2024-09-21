@@ -23,22 +23,21 @@ export default function Input(props) {
 	});
 
 	const inputOnChangeHandler = (event) => {
-		console.log(event.target.value.length);
 		dispath({
 			type: "CHANGE",
 			value: event.target.value,
-			isValid: event.target.value.length > 7,
+			isValid: event.target.value.length > 2,
 		});
 
-		let inputIcon = document.getElementById("input-svg");
-		mainInput.isValid
-			? inputIcon.classList.add("input_svg_is_valid")
-			: inputIcon.classList.remove("input_svg_is_valid");
+		// let inputIcon = document.getElementById("input-svg");
+		// mainInput.isValid
+		// 	? inputIcon.classList.add("input_svg_is_valid")
+		// 	: inputIcon.classList.remove("input_svg_is_valid");
 	};
 	const element =
 		props.element === "input" ? (
 			<input
-				className={props.className}
+				className={`${props.className} ${mainInput.isValid ? 'isValid' : 'isNotValid'}`}
 				maxLength={props.maxLength}
 				type={props.type}
 				placeholder={props.placeholder}
