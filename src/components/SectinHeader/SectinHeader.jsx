@@ -1,16 +1,16 @@
 import React from "react";
 import "./SectinHeader.css";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 export default function SectinHeader({ title, hasBtn }) {
 	return (
 		<div className="section-header">
 			<h3 className="section-header_title">{title}</h3>
 			{hasBtn ? (
-				<Link className="section-header_more" to='/allcourses'>
+				<Link className="section-header_more" to="/allcourses">
 					نمایش همه
 					<svg
-						class="section-header_more-icon"
+						className="section-header_more-icon"
 						aria-hidden="true"
 						focusable="false"
 						data-prefix="fas"

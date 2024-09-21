@@ -6,7 +6,7 @@ export default function BreadCrumb({ links }) {
 	return (
 		<div className="breadcrumb">
 			<svg
-				class="breadcrumb_icon"
+				className="breadcrumb_icon"
 				aria-hidden="true"
 				focusable="false"
 				data-prefix="fas"
@@ -27,7 +27,7 @@ export default function BreadCrumb({ links }) {
 
 						{link.id !== links.length ? (
 							<svg
-								class="breadcrumb_item_icon"
+								className="breadcrumb_item_icon"
 								aria-hidden="true"
 								focusable="false"
 								data-prefix="fas"

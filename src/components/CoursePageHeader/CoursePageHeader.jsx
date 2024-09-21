@@ -1,9 +1,12 @@
 import React from "react";
-import './CoursePageHeader.css'
+import "./CoursePageHeader.css";
 
-export default function CoursePageHeader({showSelection, showColumn, setShowSelection, setShowColumn}) {
-
-
+export default function CoursePageHeader({
+	showSelection,
+	showColumn,
+	setShowSelection,
+	setShowColumn,
+}) {
 	return (
 		<div>
 			<div className="category-header">
@@ -55,7 +58,7 @@ export default function CoursePageHeader({showSelection, showColumn, setShowSele
 						>
 							مرتب سازی پیش فرض
 							<svg
-								class="svg-inline--fa fa-angle-down courses-top-bar__selection-icon"
+								className="svg-inline--fa fa-angle-down courses-top-bar__selection-icon"
 								aria-hidden="true"
 								focusable="false"
 								data-prefix="fas"
@@ -72,19 +75,19 @@ export default function CoursePageHeader({showSelection, showColumn, setShowSele
 						</span>
 						{showSelection ? (
 							<ul className="category-header_selection-list">
-								<li class="category-header_selection-item">
+								<li className="category-header_selection-item">
 									مرتب سازی بر اساس محبوبیت
 								</li>
-								<li class="category-header_selection-item">
+								<li className="category-header_selection-item">
 									مرتب سازی بر اساس امتیاز
 								</li>
-								<li class="category-header_selection-item">
+								<li className="category-header_selection-item">
 									مرتب سازی بر اساس آخرین
 								</li>
-								<li class="category-header_selection-item">
+								<li className="category-header_selection-item">
 									مرتب سازی بر اساس ارزان ترین
 								</li>
-								<li class="category-header_selection-item">
+								<li className="category-header_selection-item">
 									مرتب سازی بر اساس گران ترین
 								</li>
 							</ul>
@@ -101,7 +104,7 @@ export default function CoursePageHeader({showSelection, showColumn, setShowSele
 						/>
 						<div className="category-header_searchbox-icon">
 							<svg
-								class="svg-inline--fa fa-magnifying-glass"
+								className="svg-inline--fa fa-magnifying-glass"
 								aria-hidden="true"
 								focusable="false"
 								data-prefix="fas"

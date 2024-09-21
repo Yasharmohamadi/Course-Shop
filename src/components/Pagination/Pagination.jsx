@@ -7,7 +7,7 @@ export default function Pagination() {
 			<ul className="pagination_list">
 				<li className="pagination_item">
 					<svg
-						class="svg-inline--fa fa-right-long courses__pagination-icon"
+						className="svg-inline--fa fa-right-long courses__pagination-icon"
 						aria-hidden="true"
 						focusable="false"
 						data-prefix="fas"
@@ -27,7 +27,7 @@ export default function Pagination() {
 				<li className="pagination_item">3</li>
 				<li className="pagination_item">
 					<svg
-						class="svg-inline--fa fa-left-long courses__pagination-icon"
+						className="svg-inline--fa fa-left-long courses__pagination-icon"
 						aria-hidden="true"
 						focusable="false"
 						data-prefix="fas"

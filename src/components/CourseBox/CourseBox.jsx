@@ -22,7 +22,7 @@ export default function CourseBox({ title, img }) {
 				<div className="coursebox_info-wrapper">
 					<span className="coursebox_teacher">
 						<svg
-							class="svg-inline--fa fa-chalkboard-user"
+							className="svg-inline--fa fa-chalkboard-user"
 							aria-hidden="true"
 							focusable="false"
 							data-prefix="fas"
@@ -49,7 +49,7 @@ export default function CourseBox({ title, img }) {
 				<div className="coursebox_info-wrapper">
 					<span className="coursebox_studends">
 						<svg
-							class="svg-inline--fa fa-users"
+							className="svg-inline--fa fa-users"
 							aria-hidden="true"
 							focusable="false"
 							data-prefix="fas"
@@ -71,7 +71,7 @@ export default function CourseBox({ title, img }) {
 			<a className="coursebox_btn" href="">
 				مشاهده اطلاعات
 				<svg
-					class="svg-inline--fa fa-arrow-left"
+					className="svg-inline--fa fa-arrow-left"
 					aria-hidden="true"
 					focusable="false"
 					data-prefix="fas"

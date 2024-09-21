@@ -4,7 +4,6 @@ export default function LandingCounter({ count }) {
 	const [counter, setCouter] = useState(0);
 
 	useEffect(() => {
-
 		let interval = setInterval(() => {
 			setCouter((prevCounter) => prevCounter + 1);
 		}, 1);
@@ -14,7 +13,6 @@ export default function LandingCounter({ count }) {
 		}
 
 		return () => clearInterval(interval);
-
 	}, [counter]);
-	return <span class="landing-status__count">{counter}</span>;
+	return <span className="landing-status__count">{counter}</span>;
 }

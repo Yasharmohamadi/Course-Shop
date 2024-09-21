@@ -85,7 +85,7 @@ export default function Login() {
 					</form>
 					<div className="sublink_wrapper">
 						<div className="checkbox_wrapper">
-							<label className="checkbox_lebel" for="checkbox">
+							<label className="checkbox_lebel" htmlFor="checkbox">
 								مرا به خاطر بسپار!
 							</label>
 							<input type="checkbox" className="checkbox_input" id="checkbox" />

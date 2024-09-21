@@ -42,7 +42,7 @@ export default function Navbar() {
 				<div className="nav-left">
 					<div className="nav-serach" dir="ltr">
 						<svg
-							class="svg-inline--fa fa-magnifying-glass nav-serch-icon"
+							className="svg-inline--fa fa-magnifying-glass nav-serch-icon"
 							aria-hidden="true"
 							focusable="false"
 							data-prefix="fas"
@@ -61,7 +61,7 @@ export default function Navbar() {
 					</div>
 					<a className="nav-basket">
 						<svg
-							class="svg-inline--fa fa-cart-shopping"
+							className="svg-inline--fa fa-cart-shopping"
 							aria-hidden="true"
 							focusable="false"
 							data-prefix="fas"
