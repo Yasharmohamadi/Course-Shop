@@ -10,9 +10,22 @@ import {
 	minValidator,
 	maxValidator,
 } from "../../Validators/rules";
+import { useForm } from "../../hooks/useForm";
 
 export default function Login() {
-
+	const [formState, onInputHandler] = useForm(
+		{
+			loginUsername: {
+				value: "",
+				isValid: false,
+			},
+			loginPassword: {
+				value: "",
+				isValid: false,
+			},
+		},
+		false
+	);
 
 	return (
 		<div className="login">
@@ -38,6 +51,7 @@ export default function Login() {
 									minValidator(4),
 									maxValidator(16),
 								]}
+								onInputHandler={onInputHandler}
 							/>
 							<svg
 								aria-hidden="true"
@@ -68,6 +82,7 @@ export default function Login() {
 									minValidator(8),
 									maxValidator(16),
 								]}
+								onInputHandler={onInputHandler}
 							/>
 							<svg
 								aria-hidden="true"
@@ -84,7 +99,7 @@ export default function Login() {
 								></path>
 							</svg>{" "}
 						</div>
-						<Button className="form_btn" onClick={false} >
+						<Button className="form_btn" onClick={false} isDisabled={!formState.isFormValid}>
 							وارد شو
 							<svg
 								aria-hidden="true"
