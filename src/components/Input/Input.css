@@ -1,8 +1,10 @@
 .isValid {
-	border: 0.1rem solid #00e000b4 !important;
+	transition: all 500ms ease;
+	border: 0.3rem solid #00e000b4 !important;
 }
 .isNotValid {
-	border: 0.1rem solid #e60000b5 !important;
+	transition: all 500ms ease;
+	border: 0.3rem solid #e60000b5 !important;
 }
 .input_svg_is_valid path {
 	fill: #00e000;

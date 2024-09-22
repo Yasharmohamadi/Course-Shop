@@ -1,42 +1,50 @@
-import React, { useReducer } from "react";
+import React, { useEffect, useReducer } from "react";
 import "./Input.css";
 import validator from "../../Validators/validator";
 
+const inputReducer = (state, action) => {
+	switch (action.type) {
+		case "CHANGE": {
+			return {
+				value: action.value,
+				isValid: validator(action.value, action.validation),
+			};
+		}
+		default: {
+			return state;
+		}
+	}
+};
+
 export default function Input(props) {
 
-	console.log(props.validation);
-
-	const inputReducer = (state, action) => {
-		switch (action.type) {
-			case "CHANGE": {
-				return {
-					value: action.value,
-					isValid: validator(action.value, action.validation),
-				};
-			}
-			default: {
-				return state;
-			}
-		}
-	};
-
-	const [mainInput, dispath] = useReducer(inputReducer, {
+	const [mainInput, dispacth] = useReducer(inputReducer, {
 		value: "",
 		isValid: false,
 	});
+	// mainInput = {value: '', isValid: false}
+
+	const { value, isValid } = mainInput
+	const {id, onInputHandler} = props 
+
+	useEffect(() => {
+		onInputHandler(id, value, isValid)
+	},[value])
 
 	const inputOnChangeHandler = (event) => {
-		dispath({
+		dispacth({
 			type: "CHANGE",
 			value: event.target.value,
 			validation: props.validation,
-			isValid: event.target.value.length > props.validation,
 		});
 	};
+
 	const element =
 		props.element === "input" ? (
 			<input
-				className={`${props.className} ${mainInput.isValid ? 'isValid' : 'isNotValid'}`}
+				className={`${props.className} ${
+					mainInput.isValid ? "isValid" : "isNotValid"
+				}`}
 				maxLength={props.maxLength}
 				type={props.type}
 				placeholder={props.placeholder}

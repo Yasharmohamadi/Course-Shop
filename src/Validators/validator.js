@@ -1,4 +1,4 @@
-import rules from "./rules";
+import rules from "./rules"; // import {requiredValue, minValue, maxValue, emailValue}
 
 const validator = (value, validation) => {
 
@@ -17,12 +17,10 @@ const validator = (value, validation) => {
 	}
 
     if (validationResault.length) {
-        return false
+        return false // validationResault have 'false' value
     } else {
-        return true
+        return true // validationResault have not value
     }
-
-
 
 };
 

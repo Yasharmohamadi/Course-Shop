@@ -8,15 +8,34 @@ import {
 	requiredValidator,
 	minValidator,
 	maxValidator,
-	emailValidator
+	emailValidator,
 } from "../../Validators/rules";
 import { Link } from "react-router-dom";
+import { useForm } from "../../hooks/useForm";
 
 export default function Register() {
+	const [formState, onInputHandler] = useForm(
+	// 	{
+	// 		username: {
+	// 			value: "",
+	// 			isValid: false,
+	// 		},
+	// 		email: {
+	// 			value: "",
+	// 			isValid: false,
+	// 		},
+	// 		Password: {
+	// 			value: "",
+	// 			isValid: false,
+	// 		},
+	// 	},
+	// 	false
+	);
+	console.log("formState in register: ", formState);
+
 	return (
 		<div className="register">
 			<Navbar />
-
 			<div className="container">
 				<div className="register_wrapper">
 					<form className="register_from">
@@ -28,6 +47,7 @@ export default function Register() {
 						<div className="input_wrapper">
 							<Input
 								className="form_input"
+								// id="username"
 								maxLength="60"
 								type="text"
 								placeholder="نام کاربری"
@@ -35,8 +55,9 @@ export default function Register() {
 								validation={[
 									requiredValidator(),
 									minValidator(4),
-									maxValidator(16)
+									maxValidator(16),
 								]}
+								// onInputHandler={onInputHandler}
 							></Input>
 							<svg
 								// id="input-svg"
@@ -57,14 +78,13 @@ export default function Register() {
 						<div className="input_wrapper">
 							<Input
 								className="form_input"
+								// id="email"
 								maxLength="60"
 								type="email"
 								placeholder="ایمیل"
 								element="input"
-								validation={[
-									requiredValidator(),
-									emailValidator()
-								]}
+								validation={[requiredValidator(), emailValidator()]}
+								// onInputHandler={onInputHandler}
 							/>
 							<svg
 								aria-hidden="true"
@@ -84,6 +104,7 @@ export default function Register() {
 						<div className="input_wrapper">
 							<Input
 								className="form_input"
+								id="password"
 								maxLength="60"
 								type="password"
 								placeholder="رمز عبور"
@@ -91,8 +112,9 @@ export default function Register() {
 								validation={[
 									requiredValidator(),
 									minValidator(8),
-									maxValidator(16)
+									maxValidator(16),
 								]}
+								// onInputHandler={onInputHandler}
 							/>
 							<svg
 								aria-hidden="true"

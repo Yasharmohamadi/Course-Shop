@@ -10,11 +10,13 @@ export const requiredValidator = () => ({
 export const minValidator = (min) => ({
 	value: minValue,
     min
+	// min: min
 });
 
 export const maxValidator = (max) => ({
 	value: maxValue,
     max
+	// max: max
 });
 
 export const emailValidator = () => ({

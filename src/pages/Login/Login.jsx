@@ -12,6 +12,8 @@ import {
 } from "../../Validators/rules";
 
 export default function Login() {
+
+
 	return (
 		<div className="login">
 			<Navbar />
@@ -25,6 +27,7 @@ export default function Login() {
 						</div>
 						<div className="input_wrapper">
 							<Input
+								id="loginUsername"
 								className="form_input"
 								maxLength="60"
 								type="text"
@@ -33,7 +36,7 @@ export default function Login() {
 								validation={[
 									requiredValidator(),
 									minValidator(4),
-									maxValidator(16)
+									maxValidator(16),
 								]}
 							/>
 							<svg
@@ -54,6 +57,7 @@ export default function Login() {
 
 						<div className="input_wrapper">
 							<Input
+								id="loginPassword"
 								className="form_input"
 								maxLength="60"
 								type="password"
@@ -62,7 +66,7 @@ export default function Login() {
 								validation={[
 									requiredValidator(),
 									minValidator(8),
-									maxValidator(16)
+									maxValidator(16),
 								]}
 							/>
 							<svg
@@ -80,7 +84,7 @@ export default function Login() {
 								></path>
 							</svg>{" "}
 						</div>
-						<Button className="form_btn" onClick={false} isDisabled={true}>
+						<Button className="form_btn" onClick={false} >
 							وارد شو
 							<svg
 								aria-hidden="true"
