@@ -15,21 +15,21 @@ import { useForm } from "../../hooks/useForm";
 
 export default function Register() {
 	const [formState, onInputHandler] = useForm(
-	// 	{
-	// 		username: {
-	// 			value: "",
-	// 			isValid: false,
-	// 		},
-	// 		email: {
-	// 			value: "",
-	// 			isValid: false,
-	// 		},
-	// 		Password: {
-	// 			value: "",
-	// 			isValid: false,
-	// 		},
-	// 	},
-	// 	false
+		{
+			registerUsername: {
+				value: "",
+				isValid: false,
+			},
+			registerEmail: {
+				value: "",
+				isValid: false,
+			},
+			registerPassword: {
+				value: "",
+				isValid: false,
+			},
+		},
+		false
 	);
 	console.log("formState in register: ", formState);
 
@@ -47,7 +47,7 @@ export default function Register() {
 						<div className="input_wrapper">
 							<Input
 								className="form_input"
-								// id="username"
+								id="registerUsername"
 								maxLength="60"
 								type="text"
 								placeholder="نام کاربری"
@@ -57,7 +57,7 @@ export default function Register() {
 									minValidator(4),
 									maxValidator(16),
 								]}
-								// onInputHandler={onInputHandler}
+								onInputHandler={onInputHandler}
 							></Input>
 							<svg
 								// id="input-svg"
@@ -78,13 +78,13 @@ export default function Register() {
 						<div className="input_wrapper">
 							<Input
 								className="form_input"
-								// id="email"
+								id="registerEmail"
 								maxLength="60"
 								type="email"
 								placeholder="ایمیل"
 								element="input"
 								validation={[requiredValidator(), emailValidator()]}
-								// onInputHandler={onInputHandler}
+								onInputHandler={onInputHandler}
 							/>
 							<svg
 								aria-hidden="true"
@@ -104,7 +104,7 @@ export default function Register() {
 						<div className="input_wrapper">
 							<Input
 								className="form_input"
-								id="password"
+								id="registerPassword"
 								maxLength="60"
 								type="password"
 								placeholder="رمز عبور"
@@ -114,7 +114,7 @@ export default function Register() {
 									minValidator(8),
 									maxValidator(16),
 								]}
-								// onInputHandler={onInputHandler}
+								onInputHandler={onInputHandler}
 							/>
 							<svg
 								aria-hidden="true"
@@ -131,7 +131,7 @@ export default function Register() {
 								></path>
 							</svg>{" "}
 						</div>
-						<Button className="form_btn" onClick={false} isDisabled={true}>
+						<Button className="form_btn" onClick={false} isDisabled={!formState.isFormValid}>
 							ثبت نام
 							<svg
 								aria-hidden="true"
