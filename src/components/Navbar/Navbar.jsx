@@ -7,9 +7,7 @@ export default function Navbar() {
 	const [mobileNavIsShow, setMobileNavIsShow] = useState(false);
 
 	const mobileNavHandler = () => {
-		console.log("clicked");
 		setMobileNavIsShow(!mobileNavIsShow);
-		console.log(mobileNavIsShow);
 	};
 
 	return (
