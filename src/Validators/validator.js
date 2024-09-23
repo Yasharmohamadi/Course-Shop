@@ -1,7 +1,7 @@
 import rules from "./rules"; // import {requiredValue, minValue, maxValue, emailValue}
+import regex from "./regex";
 
 const validator = (value, validation) => {
-
 	let validationResault = [];
 
 	for (const validator of validation) {
@@ -12,16 +12,16 @@ const validator = (value, validation) => {
 		} else if (validator.value === rules.maxValue) {
 			value.trim().length > validator.max && validationResault.push(false);
 		} else if (validator.value === rules.emailValue) {
-			!value.includes('@') && validationResault.push(false);
+			// !value.includes('@') && validationResault.push(false);
+			!regex.testEmail(value) && validationResault.push(false);
 		}
 	}
 
-    if (validationResault.length) {
-        return false // validationResault have 'false' value
-    } else {
-        return true // validationResault have not value
-    }
-
+	if (validationResault.length) {
+		return false; // validationResault have 'false' value
+	} else {
+		return true; // validationResault have not value
+	}
 };
 
 export default validator;

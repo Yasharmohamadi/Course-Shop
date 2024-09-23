@@ -28,7 +28,6 @@ export default function Input(props) {
 	const {id, onInputHandler} = props 
 
 	useEffect(() => {
-		console.log('onInputHandler: ' ,onInputHandler);
 		onInputHandler(id, value, isValid)
 	},[value])
 
