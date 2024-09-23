@@ -7,6 +7,10 @@
 	display: flex;
 	flex-direction: column;
 }
+
+.category-courses-column div a .coursebox .coursebox_img_wrapper{
+	height: 40rem;
+}
 .category-courses-column div {
 	width: 100%;
 }
