@@ -7,8 +7,11 @@ import CourseDetailBox from "../../components/CourseDetailBox/CourseDetailBox";
 import Accordion from "react-bootstrap/Accordion";
 import { NavLink } from "react-router-dom";
 import Input from "../../components/Input/Input";
+import { useForm } from "../../hooks/useForm";
+
 
 export default function Course() {
+	const [formState, onInputHandler] = useForm({},false)
 	return (
 		<div className="course">
 			<Navbar />
@@ -462,6 +465,8 @@ export default function Course() {
 								placeholder="لطفا دیدگاه خود را به اشتراک بگذارید ..."
 								rows={5}
 								element="textarea"
+								onInputHandler={onInputHandler}
+								validation=''
 							/>
 
 							<button className="comments_btn">ثبت دیدگاه</button>

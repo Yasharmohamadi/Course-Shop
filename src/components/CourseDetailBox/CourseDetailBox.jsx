@@ -6,8 +6,8 @@ export default function CourseDetailBox({ title, svg, caption }) {
 		<div className="coursedetailbox">
             <img src={svg} className="coursedetailbox_svg" />
 			<div className="coursedetailbox_texts">
-				<sapn className="coursedetailbox_title">{title}</sapn>
-				<sapn className="coursedetailbox_caption">{caption}</sapn>
+				<span className="coursedetailbox_title">{title}</span>
+				<span className="coursedetailbox_caption">{caption}</span>
 			</div>
 		</div>
 	);

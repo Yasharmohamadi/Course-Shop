@@ -28,6 +28,7 @@ export default function Input(props) {
 	const {id, onInputHandler} = props 
 
 	useEffect(() => {
+		console.log('onInputHandler: ' ,onInputHandler);
 		onInputHandler(id, value, isValid)
 	},[value])
 
@@ -50,13 +51,14 @@ export default function Input(props) {
 				placeholder={props.placeholder}
 				onChange={inputOnChangeHandler}
 				value={mainInput.value}
-			/>
-		) : (
-			<textarea
+				/>
+			) : (
+				<textarea
 				className={props.className}
 				type={props.type}
 				placeholder={props.placeholder}
 				rows={props.rows}
+				onChange={inputOnChangeHandler}
 			/>
 		);
 

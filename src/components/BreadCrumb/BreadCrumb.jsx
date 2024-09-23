@@ -22,7 +22,7 @@ export default function BreadCrumb({ links }) {
 			</svg>
 			<ul className="breadcrumb_list">
 				{links.map((link) => (
-					<li className="breadcrumb_item">
+					<li key={link.id} className="breadcrumb_item">
 						<Link to={`/${link.to}`}>{link.title}</Link>
 
 						{link.id !== links.length ? (

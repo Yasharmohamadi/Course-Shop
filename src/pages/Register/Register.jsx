@@ -31,7 +31,7 @@ export default function Register() {
 		},
 		false
 	);
-	console.log("formState in register: ", formState);
+	// console.log("formState in register: ", formState);
 
 	return (
 		<div className="register">
