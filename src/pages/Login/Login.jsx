@@ -63,7 +63,7 @@ export default function Login() {
 								data-fa-i2svg=""
 							>
 								<path
-									fill="#ffffff41"
+									fill={formState.inputs.loginUsername.isValid ? '#00e000b4' : '#ffffff41'}
 									d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"
 								></path>
 							</svg>{" "}
@@ -94,7 +94,7 @@ export default function Login() {
 								data-fa-i2svg=""
 							>
 								<path
-									fill="#ffffff41"
+									fill={formState.inputs.loginPassword.isValid ? '#00e000b4' : '#ffffff41'}
 									d="M352 192H384C419.3 192 448 220.7 448 256V448C448 483.3 419.3 512 384 512H64C28.65 512 0 483.3 0 448V256C0 220.7 28.65 192 64 192H288V144C288 64.47 352.5 0 432 0C511.5 0 576 64.47 576 144V192C576 209.7 561.7 224 544 224C526.3 224 512 209.7 512 192V144C512 99.82 476.2 64 432 64C387.8 64 352 99.82 352 144V192z"
 								></path>
 							</svg>{" "}
