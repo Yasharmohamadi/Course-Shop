@@ -22,11 +22,10 @@ export default function App() {
 
 	useEffect(() => {
 		// let localStorageData = JSON.parse(localStorage.getItem("user"));
-
 		// if (localStorageData) {
 		// 	fetch("http://localhost:3000/v1/auth/me", {
-		// 		headers: { 
-		// 			'Authorization': `Bearer ${localStorageData.token}` 
+		// 		headers: {
+		// 			'Authorization': `Bearer ${localStorageData.token}`
 		// 		},
 		// 	}).then(response => response.json())
 		// 	.then(userData => {

@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./Navbar.css";
 import { Link, NavLink } from "react-router-dom";
+import AuthContext from "../../Context/authContext";
 
 export default function Navbar() {
+	const navBarAuthContext = useContext(AuthContext);
+
 	const [userRegister, setUserRegister] = useState(true);
 	const [mobileNavIsShow, setMobileNavIsShow] = useState(false);
 
@@ -76,7 +79,12 @@ export default function Navbar() {
 						<div className="basket-notif">2</div>
 					</a>
 					<a className="nav-user">
-						<Link to="/register">ثبت نام / ورود</Link>
+						{navBarAuthContext.isLoggedIn ? (
+							<span>یاشار محمدی</span>
+							// <span>{navBarAuthContext.userInfos.name}</span>
+						) : (
+							<Link to="/register">ثبت نام / ورود</Link>
+						)}
 					</a>
 
 					<div
