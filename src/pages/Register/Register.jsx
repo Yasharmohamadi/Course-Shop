@@ -39,8 +39,23 @@ export default function Register() {
 
 	const registerNewUser = (event) => {
 		event.preventDefault();
-		
-		
+
+		let newUserInfos = {
+			name: formState.inputs.registerFullName.value,
+			username: formState.inputs.registerUsername.value,
+			email: formState.inputs.registerEmail.value,
+			password: formState.inputs.registerPassword.value,
+			confirmPassword: formState.inputs.registerPassword.value,
+		};
+		// console.log(newUserInfos);
+
+		// fetch("http://localhost:3000/v1/auth/register", {
+		// 	method: "POST",
+		// 	headers: { "Content-Type": "application/javascript" },
+		// 	body: JSON.stringify(newUserInfos),
+		// })
+		// 	.then((response) => console.log(response))
+		// 	.then((result) => console.log(result));
 	};
 
 	return (
@@ -162,7 +177,7 @@ export default function Register() {
 						<Button
 							className="form_btn"
 							event={registerNewUser}
-							isDisabled={!formState.isFormValid}
+							// isDisabled={!formState.isFormValid}
 						>
 							ثبت نام
 							<svg
