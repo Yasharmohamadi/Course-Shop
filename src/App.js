@@ -9,9 +9,11 @@ export default function App() {
 	const [token, setToken] = useState(null)
 	const [userInfos, setUserInfos] = useState({})
 
-	const login = (token) => {
+	const login = (userInfos, token) => {
 		setToken(token)
 		localStorage.setItem('user', JSON.stringify({token}))
+		setIsLoggedIn(true)
+		setUserInfos(userInfos)
 		
 	}
 	const logout = () => {
@@ -27,7 +29,7 @@ export default function App() {
 				token, // token: token,
 				userInfos, // userInfos: userInfos,
 				login,
-				logout: () => {},
+				logout,
 			}}>
 				{router}
 			</AuthContext.Provider>
