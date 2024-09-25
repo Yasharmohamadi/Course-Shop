@@ -16,7 +16,7 @@ import AuthContext from "../../Context/authContext";
 
 export default function Register() {
 	const registerAuthContext = useContext(AuthContext);
-	console.log(registerAuthContext);
+	// console.log(registerAuthContext);
 
 	const [formState, onInputHandler] = useForm(
 		{
@@ -51,18 +51,18 @@ export default function Register() {
 			password: formState.inputs.registerPassword.value,
 			confirmPassword: formState.inputs.registerPassword.value,
 		};
-		console.log(newUserInfos);
+		// console.log(newUserInfos);
 
-		fetch("http://localhost:3000/v1/auth/register", {
-			method: "POST",
-			headers: { "Content-Type": "application/javascript" },
-			body: JSON.stringify(newUserInfos),
-		})
-			.then((response) => console.log(response))
-			.then((result) => {
-				console.log(result);
-				// registerAuthContext.login(result.user ,result.accessToken)
-			});
+		// fetch("http://localhost:3000/v1/auth/register", {
+		// 	method: "POST",
+		// 	headers: { "Content-Type": "application/javascript" },
+		// 	body: JSON.stringify(newUserInfos),
+		// })
+		// 	.then((response) => console.log(response))
+		// 	.then((result) => {
+		// 		console.log(result);
+		// 		// registerAuthContext.login(result.user ,result.accessToken)
+		// 	});
 	};
 
 	return (
