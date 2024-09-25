@@ -52,6 +52,12 @@
 	top: 0;
 	bottom: 0;
 	margin: auto 0;
+
+
+}
+.input_wrapper svg path{
+	transition: all 500ms ease;
+
 }
 .form_input {
 	padding: 0.5rem 1rem;
@@ -62,6 +68,8 @@
 	outline: none;
 	color: #fff;
 	background: transparent;
+	transition: all 500ms ease;
+
 }
 .form_input::placeholder {
 	color: #ffffff41;
@@ -76,6 +84,7 @@
 	margin-top: 1rem;
 	padding: 1rem;
 	color: #fff;
+
 }
 .form_btn:disabled {
 	opacity: 0.3;
