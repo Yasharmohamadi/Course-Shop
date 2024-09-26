@@ -25,3 +25,8 @@
 .sublink_wrapper a:hover {
 	text-shadow: 0 0 1rem rgba(0, 0, 0, 1);
 }
+
+.swal-footer {
+	display: flex;
+    justify-content: center;
+}

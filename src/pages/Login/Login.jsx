@@ -12,8 +12,11 @@ import {
 } from "../../Validators/rules";
 import { useForm } from "../../hooks/useForm";
 import AuthContext from "../../Context/authContext";
+import swal from "sweetalert";
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
+	const navigate = useNavigate()
 	const loginAuthContext = useContext(AuthContext);
 
 	const [formState, onInputHandler] = useForm(
@@ -36,6 +39,7 @@ export default function Login() {
 			password: formState.inputs.loginPassword.value,
 		};
 		console.log(userData);
+		
 
 		fetch("http://localhost:3000/v1/auth/login", {
 			method: "POST",
@@ -54,15 +58,27 @@ export default function Login() {
 			})
 			.then((result) => {
 				console.log(result);
+				swal({
+					title: "ورود موفقیت آمیز بود",
+					icon: "success",
+					button:'رفتن به صفحه اصلی',
+					// dangerMode: true,
+				}).then(value => {
+					navigate('/')
+				});
 				loginAuthContext.login({} ,result.accessToken)
-
+				
 			})
 			.catch((error) => {
 				console.log(error);
-				alert('کاربر یافت نشد')
+				swal({
+					title: "کاربری با این مشخصات وجود ندارد",
+					icon: "error",
+					button:'تلاش دوباره',
+					dangerMode: true,
+				});
 			});
 	};
-
 
 	return (
 		<div className="login">
