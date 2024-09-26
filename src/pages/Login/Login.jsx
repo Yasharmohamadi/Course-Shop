@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Login.css";
 import { Link } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
@@ -11,8 +11,11 @@ import {
 	maxValidator,
 } from "../../Validators/rules";
 import { useForm } from "../../hooks/useForm";
+import AuthContext from "../../Context/authContext";
 
 export default function Login() {
+	const loginAuthContext = useContext(AuthContext);
+
 	const [formState, onInputHandler] = useForm(
 		{
 			loginUsername: {
@@ -51,12 +54,15 @@ export default function Login() {
 			})
 			.then((result) => {
 				console.log(result);
+				loginAuthContext.login({} ,result.accessToken)
+
 			})
 			.catch((error) => {
 				console.log(error);
 				alert('کاربر یافت نشد')
 			});
 	};
+
 
 	return (
 		<div className="login">
