@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import "./Register.css";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
@@ -13,10 +13,12 @@ import {
 import { Link } from "react-router-dom";
 import { useForm } from "../../hooks/useForm";
 import AuthContext from "../../Context/authContext";
+import ReCAPTCHA from "react-google-recaptcha";
 
 export default function Register() {
 	const registerAuthContext = useContext(AuthContext);
 	// console.log(registerAuthContext);
+	const [isGoogleReCaptchaVerify, setIsGoogleReCaptchaVerify] = useState(false)
 
 	const [formState, onInputHandler] = useForm(
 		{
@@ -64,6 +66,10 @@ export default function Register() {
 		// 		// registerAuthContext.login(result.user ,result.accessToken)
 		// 	});
 	};
+
+	const reCaptchaOnChangeHandler = () => {
+		setIsGoogleReCaptchaVerify(true)
+	}
 
 	return (
 		<div className="register">
@@ -197,11 +203,12 @@ export default function Register() {
 								></path>
 							</svg>{" "}
 						</div>
+						<ReCAPTCHA sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" onChange={reCaptchaOnChangeHandler} />
 						<Button
 							className="form_btn"
 							event={registerNewUser}
 							type='submit'
-							isDisabled={!formState.isFormValid}
+							isDisabled={!formState.isFormValid || !isGoogleReCaptchaVerify}
 						>
 							ثبت نام
 							<svg
