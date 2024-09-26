@@ -200,6 +200,7 @@ export default function Register() {
 						<Button
 							className="form_btn"
 							event={registerNewUser}
+							type='submit'
 							isDisabled={!formState.isFormValid}
 						>
 							ثبت نام
