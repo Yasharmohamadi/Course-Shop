@@ -542,7 +542,25 @@ export default function Course() {
 								</div>
 							)}
 							<h4 className="comments_title">دیدگاهتان را بنویسید</h4>
-							
+							{isUserRegisteredToThisCourse ? (
+								<>
+									<Input
+										className="comments_textarea"
+										type="text"
+										placeholder="لطفا دیدگاه خود را به اشتراک بگذارید ..."
+										rows={5}
+										element="textarea"
+										onInputHandler={onInputHandler}
+										validation=""
+									/>
+
+									<button className="comments_btn">ثبت دیدگاه</button>
+								</>
+							) : (
+								<div className="comment_error_box">
+									برای ثبت دیدگاه، اول باید در دوره ثبت نام کنید.
+								</div>
+							)}
 						</div>
 					</div>
 					<div className="col-12 col-lg-4 course_main-left">
