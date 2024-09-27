@@ -11,14 +11,39 @@ import { useForm } from "../../hooks/useForm";
 import { useParams } from "react-router-dom";
 import swal from "sweetalert";
 
-
 export default function Course() {
+	const [comments, setComments] = useState([
+		{
+			id: 1,
+			username: "یاشار محمدی",
+			comment: "دوره جامعی بود خسته نباشید میگم به مدرس.",
+			date: "1403-5-27",
+		},
+		{
+			id: 2,
+			username: "یاشار محمدی",
+			comment: "دوره جامعی بود خسته نباشید میگم به مدرس.",
+			date: "1403-5-27",
+		},
+		{
+			id: 3,
+			username: "یاشار محمدی",
+			comment: "دوره جامعی بود خسته نباشید میگم به مدرس.",
+			date: "1403-5-27",
+		},
+		{
+			id: 4,
+			username: "یاشار محمدی",
+			comment: "دوره جامعی بود خسته نباشید میگم به مدرس.",
+			date: "1403-5-27",
+		},
+	]);
 	const [formState, onInputHandler] = useForm({}, false);
 	const { courseName } = useParams();
 	const [
 		isUserRegisteredToThisCourse,
 		setIsUserRegisteredToThisCourse,
-	] = useState(true);
+	] = useState(false);
 
 	const registerToCourseHandler = () => {
 		swal({
@@ -27,16 +52,15 @@ export default function Course() {
 			button: "باشه بابا",
 			dangerMode: true,
 		});
-	}
+	};
 
 	useEffect(() => {
 		// console.log(courseName);
-		// fetch("", {
+		// const localStorageData = JSON.parse(localStorage.getItem("user"))
+		// fetch(`http://localhost:4000/v1/courses/${courseName}`, {
 		// 	method: "POST",
 		// 	headers: {
-		// 		Authorization: `Bearer ${JSON.parse(
-		// 			localStorage.getItem("user").token
-		// 		)}`,
+		// 		Authorization: `Bearer ${localStorageData === null ? null : localStorageData.token}`,
 		// 	},
 		// })
 		// 	.then((response) => response.json())
@@ -489,54 +513,36 @@ export default function Course() {
 						</div>
 
 						<div className="course_comments">
-							<div className="comment_box">
-								<div className="comment_header">
-									<span className="comment_user">یاشار محمدی</span>
-									<div className="comment_user_position">
-										خریدار محصول
-									</div>
-									<span className="cpmment_date">1403-5-27</span>
+							<h4 className="comment_title">دیدگاه ها</h4>
+							{comments.length !== 0 ? (
+								<>
+									{comments.map((comment) => (
+										<div className="comment_box" key={comment.id}>
+											<div className="comment_header">
+												<div className="comment_header_right">
+													<span className="comment_user">
+														{comment.username}
+													</span>
+													<div className="comment_user_position">
+														خریدار محصول
+													</div>
+													<span className="cpmment_date">{comment.date}</span>
+												</div>
+												
+											</div>
+											<div className="comment_content">
+												<span>{comment.comment}.</span>
+											</div>
+										</div>
+									))}
+								</>
+							) : (
+								<div className="comment_error_box">
+									هنوز کامنتی برای این دوره ثبت نشده است.
 								</div>
-								<div className="comment_content">
-									<span>دوره جامعی بود خسته نباشید میگم به مدرس.</span>
-								</div>
-							</div>
-							<div className="comment_box">
-								<div className="comment_header">
-									<span className="comment_user">یاشار محمدی</span>
-									<div className="comment_user_position">
-										خریدار محصول
-									</div>
-									<span className="cpmment_date">1403-5-27</span>
-								</div>
-								<div className="comment_content">
-									<span>دوره جامعی بود خسته نباشید میگم به مدرس.</span>
-								</div>
-							</div>
-							<div className="comment_box">
-								<div className="comment_header">
-									<span className="comment_user">یاشار محمدی</span>
-									<div className="comment_user_position">
-										خریدار محصول
-									</div>
-									<span className="cpmment_date">1403-5-27</span>
-								</div>
-								<div className="comment_content">
-									<span>دوره جامعی بود خسته نباشید میگم به مدرس.</span>
-								</div>
-							</div>
+							)}
 							<h4 className="comments_title">دیدگاهتان را بنویسید</h4>
-							<Input
-								className="comments_textarea"
-								type="text"
-								placeholder="لطفا دیدگاه خود را به اشتراک بگذارید ..."
-								rows={5}
-								element="textarea"
-								onInputHandler={onInputHandler}
-								validation=""
-							/>
-
-							<button className="comments_btn">ثبت دیدگاه</button>
+							
 						</div>
 					</div>
 					<div className="col-12 col-lg-4 course_main-left">
@@ -565,27 +571,30 @@ export default function Course() {
 							</div>
 							<div className="course_register">
 								<div className="course_register_content">
-											<svg
-												className=""
-												aria-hidden="true"
-												focusable="false"
-												data-prefix="fas"
-												data-icon="graduation-cap"
-												role="img"
-												viewBox="0 0 640 512"
-												data-fa-i2svg=""
-											>
-												<path
-													fill="#FFF"
-													d="M623.1 136.9l-282.7-101.2c-13.73-4.91-28.7-4.91-42.43 0L16.05 136.9C6.438 140.4 0 149.6 0 160s6.438 19.65 16.05 23.09L76.07 204.6c-11.89 15.8-20.26 34.16-24.55 53.95C40.05 263.4 32 274.8 32 288c0 9.953 4.814 18.49 11.94 24.36l-24.83 149C17.48 471.1 25 480 34.89 480H93.11c9.887 0 17.41-8.879 15.78-18.63l-24.83-149C91.19 306.5 96 297.1 96 288c0-10.29-5.174-19.03-12.72-24.89c4.252-17.76 12.88-33.82 24.94-47.03l190.6 68.23c13.73 4.91 28.7 4.91 42.43 0l282.7-101.2C633.6 179.6 640 170.4 640 160S633.6 140.4 623.1 136.9zM351.1 314.4C341.7 318.1 330.9 320 320 320c-10.92 0-21.69-1.867-32-5.555L142.8 262.5L128 405.3C128 446.6 213.1 480 320 480c105.1 0 192-33.4 192-74.67l-14.78-142.9L351.1 314.4z"
-												></path>
-											</svg>
+									<svg
+										className=""
+										aria-hidden="true"
+										focusable="false"
+										data-prefix="fas"
+										data-icon="graduation-cap"
+										role="img"
+										viewBox="0 0 640 512"
+										data-fa-i2svg=""
+									>
+										<path
+											fill="#FFF"
+											d="M623.1 136.9l-282.7-101.2c-13.73-4.91-28.7-4.91-42.43 0L16.05 136.9C6.438 140.4 0 149.6 0 160s6.438 19.65 16.05 23.09L76.07 204.6c-11.89 15.8-20.26 34.16-24.55 53.95C40.05 263.4 32 274.8 32 288c0 9.953 4.814 18.49 11.94 24.36l-24.83 149C17.48 471.1 25 480 34.89 480H93.11c9.887 0 17.41-8.879 15.78-18.63l-24.83-149C91.19 306.5 96 297.1 96 288c0-10.29-5.174-19.03-12.72-24.89c4.252-17.76 12.88-33.82 24.94-47.03l190.6 68.23c13.73 4.91 28.7 4.91 42.43 0l282.7-101.2C633.6 179.6 640 170.4 640 160S633.6 140.4 623.1 136.9zM351.1 314.4C341.7 318.1 330.9 320 320 320c-10.92 0-21.69-1.867-32-5.555L142.8 262.5L128 405.3C128 446.6 213.1 480 320 480c105.1 0 192-33.4 192-74.67l-14.78-142.9L351.1 314.4z"
+										></path>
+									</svg>
 									{isUserRegisteredToThisCourse ? (
-										<>
-											شما دانشجوی دوره هستید
-										</>
+										<>شما دانشجوی دوره هستید</>
 									) : (
-										<a className="course_register_link" onClick={registerToCourseHandler}>ثبت نام در دوره</a>
+										<a
+											className="course_register_link"
+											onClick={registerToCourseHandler}
+										>
+											ثبت نام در دوره
+										</a>
 									)}
 								</div>
 							</div>
