@@ -45,12 +45,21 @@ export default function Course() {
 		setIsUserRegisteredToThisCourse,
 	] = useState(false);
 
-	const registerToCourseHandler = () => {
+	const loginToCourseHandler = () => {
+		setIsUserRegisteredToThisCourse(false);
 		swal({
-			title: "راستش دیتابیسی نداریم پس نمیتونیم ثبت نامت کنیم :(",
+			title: "شما دیگه دانشجوی دوره نیستی :(",
 			icon: "warning",
 			button: "باشه بابا",
 			dangerMode: true,
+		});
+	};
+	const logoutToCourseHandler = () => {
+		setIsUserRegisteredToThisCourse(true);
+		swal({
+			title: ":) تبریک میگم! تو الان دانشجوی دوره محسوب میشی",
+			icon: "success",
+			button: "بزن بریم",
 		});
 	};
 
@@ -611,11 +620,16 @@ export default function Course() {
 										></path>
 									</svg>
 									{isUserRegisteredToThisCourse ? (
-										<>شما دانشجوی دوره هستید</>
+										<a
+											className="course_register_link"
+											onClick={loginToCourseHandler}
+										>
+											شما دانشجوی دوره هستید
+										</a>
 									) : (
 										<a
 											className="course_register_link"
-											onClick={registerToCourseHandler}
+											onClick={logoutToCourseHandler}
 										>
 											ثبت نام در دوره
 										</a>
