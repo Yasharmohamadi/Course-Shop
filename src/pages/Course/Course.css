@@ -149,6 +149,7 @@
 
 .course_intro_btn:hover,
 .course_pagelink_wrapper:hover .course_pagelink_url,
+.course_register:hover .course_register_link,
 .teacher_position:hover,
 .comments_btn:hover {
 	text-shadow: 0 0 1rem rgba(0, 0, 0, 1);
@@ -218,6 +219,14 @@
 	line-height: 1.8;
 	font-size: 1.8rem;
 	text-align: justify;
+}
+
+.course_register {
+	cursor: pointer;
+}
+
+.course_register_link {
+	color: #fff;
 }
 
 .course_register,
@@ -324,8 +333,43 @@
 	margin-top: 3rem;
 	color: #fff;
 }
+
+.comment_box {
+	background: var(--primary-color);
+	border: var(--border);
+	border-radius: 1rem;
+	padding: 2rem;
+	margin-bottom: 2rem;
+	cursor: default;
+}
+.comment_header {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	gap: 1rem;
+	margin-bottom: 2rem;
+}
+.comment_user {
+
+}
+.comment_user_position {
+	background: #ffffff57;
+	padding: 0.5rem 1rem;
+	display: inline;
+	border: var(--border);
+	border-radius: 1rem;
+}
+.cpmment_date {
+	color: #ffffff90;
+
+}
+.comment_content {
+
+}
 .comments_title {
 	font-size: 2rem;
+	margin-top: 4rem;
+	margin-right: 1rem;
 }
 .comments_textarea {
 	margin: 2rem 0 1rem 0;
