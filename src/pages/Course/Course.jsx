@@ -252,14 +252,16 @@ export default function Course() {
 									و سطرآنچنان که لازم است.
 								</p>
 							</div>
-							<div className="course_intro_btns">
-								<a href="" className="course_intro_btn">
-									دانلود همگانی ویدیو ها
-								</a>
-								<a href="" className="course_intro_btn">
-									دانلود همگانی پیوست ها
-								</a>
-							</div>
+							{isUserRegisteredToThisCourse ? (
+								<div className="course_intro_btns">
+									<a href="" className="course_intro_btn">
+										دانلود همگانی ویدیو ها
+									</a>
+									<a href="" className="course_intro_btn">
+										دانلود همگانی پیوست ها
+									</a>
+								</div>
+							) : null}
 						</div>
 						<div className="course_acoordion">
 							<Accordion defaultActiveKey="0">
