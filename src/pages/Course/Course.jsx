@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Course.css";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
@@ -8,10 +8,25 @@ import Accordion from "react-bootstrap/Accordion";
 import { NavLink } from "react-router-dom";
 import Input from "../../components/Input/Input";
 import { useForm } from "../../hooks/useForm";
-
+import { useParams } from "react-router-dom";
 
 export default function Course() {
-	const [formState, onInputHandler] = useForm({},false)
+	const [formState, onInputHandler] = useForm({}, false);
+	const { courseName } = useParams();
+
+	useEffect(() => {
+		// console.log(courseName);
+		// fetch("", {
+		// 	method: "POST",
+		// 	headers: {
+		// 		Authorization: `Bearer ${JSON.parse(
+		// 			localStorage.getItem("user").token
+		// 		)}`,
+		// 	},
+		// })
+		// 	.then((response) => response.json())
+		// 	.then((result) => console.log(result));
+	}, []);
 	return (
 		<div className="course">
 			<Navbar />
@@ -466,7 +481,7 @@ export default function Course() {
 								rows={5}
 								element="textarea"
 								onInputHandler={onInputHandler}
-								validation=''
+								validation=""
 							/>
 
 							<button className="comments_btn">ثبت دیدگاه</button>

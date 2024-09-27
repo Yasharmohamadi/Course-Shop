@@ -53,7 +53,7 @@ export default function Register() {
 			password: formState.inputs.registerPassword.value,
 			confirmPassword: formState.inputs.registerPassword.value,
 		};
-		// console.log(newUserInfos);
+		console.log(newUserInfos);
 
 		// fetch("http://localhost:3000/v1/auth/register", {
 		// 	method: "POST",
@@ -63,7 +63,7 @@ export default function Register() {
 		// 	.then((response) => console.log(response))
 		// 	.then((result) => {
 		// 		console.log(result);
-		// 		// registerAuthContext.login(result.user ,result.accessToken)
+		// 		registerAuthContext.login(result.user ,result.accessToken)
 		// 	});
 	};
 
@@ -203,7 +203,10 @@ export default function Register() {
 								></path>
 							</svg>{" "}
 						</div>
+						<div className="input_wrapper recaptcha-wrapper">
 						<ReCAPTCHA sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" onChange={reCaptchaOnChangeHandler} />
+						</div>
+
 						<Button
 							className="form_btn"
 							event={registerNewUser}
