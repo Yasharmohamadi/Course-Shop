@@ -14,11 +14,16 @@ import { Link } from "react-router-dom";
 import { useForm } from "../../hooks/useForm";
 import AuthContext from "../../Context/authContext";
 import ReCAPTCHA from "react-google-recaptcha";
+import { useNavigate } from "react-router-dom";
+
+import swal from "sweetalert";
 
 export default function Register() {
+	const navigate = useNavigate();
+
 	const registerAuthContext = useContext(AuthContext);
 	// console.log(registerAuthContext);
-	const [isGoogleReCaptchaVerify, setIsGoogleReCaptchaVerify] = useState(false)
+	const [isGoogleReCaptchaVerify, setIsGoogleReCaptchaVerify] = useState(false);
 
 	const [formState, onInputHandler] = useForm(
 		{
@@ -62,14 +67,22 @@ export default function Register() {
 		// })
 		// 	.then((response) => console.log(response))
 		// 	.then((result) => {
+		swal({
+			title: "ثبت نام موفقیت آمیز بود",
+			icon: "success",
+			button: "رفتن به صفحه اصلی",
+			// dangerMode: true,
+		}).then((value) => {
+			navigate("/");
+		});
 		// 		console.log(result);
 		// 		registerAuthContext.login(result.user ,result.accessToken)
 		// 	});
 	};
 
 	const reCaptchaOnChangeHandler = () => {
-		setIsGoogleReCaptchaVerify(true)
-	}
+		setIsGoogleReCaptchaVerify(true);
+	};
 
 	return (
 		<div className="register">
@@ -204,14 +217,19 @@ export default function Register() {
 							</svg>{" "}
 						</div>
 						<div className="input_wrapper recaptcha-wrapper">
-						<ReCAPTCHA sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" onChange={reCaptchaOnChangeHandler} />
+							<ReCAPTCHA
+								sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+								onChange={reCaptchaOnChangeHandler}
+							/>
 						</div>
 
 						<Button
 							className="form_btn"
 							event={registerNewUser}
-							type='submit'
-							isDisabled={!formState.isFormValid || !isGoogleReCaptchaVerify}
+							type="submit"
+							isDisabled={!formState.isFormValid}
+
+							// isDisabled={!formState.isFormValid || !isGoogleReCaptchaVerify}
 						>
 							ثبت نام
 							<svg

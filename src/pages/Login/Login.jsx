@@ -60,14 +60,14 @@ export default function Login() {
 		// 	})
 		// 	.then((result) => {
 		// 		console.log(result);
-		// 		swal({
-		// 			title: "ورود موفقیت آمیز بود",
-		// 			icon: "success",
-		// 			button: "رفتن به صفحه اصلی",
-		// 			// dangerMode: true,
-		// 		}).then((value) => {
-		// 			navigate("/");
-		// 		});
+				swal({
+					title: "ورود موفقیت آمیز بود",
+					icon: "success",
+					button: "رفتن به صفحه اصلی",
+					// dangerMode: true,
+				}).then((value) => {
+					navigate("/");
+				});
 		// 		loginAuthContext.login({}, result.accessToken);
 		// 	})
 		// 	.catch((error) => {
@@ -176,7 +176,8 @@ export default function Login() {
 							className="form_btn"
 							type="submit"
 							event={userLogin}
-							isDisabled={!isGoogleReCaptchaVerify || !formState.isFormValid}
+							isDisabled={!formState.isFormValid}
+							// isDisabled={!isGoogleReCaptchaVerify || !formState.isFormValid}
 						>
 							وارد شو
 							<svg
