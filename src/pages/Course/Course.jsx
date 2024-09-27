@@ -528,7 +528,13 @@ export default function Course() {
 													</div>
 													<span className="cpmment_date">{comment.date}</span>
 												</div>
-												
+												{isUserRegisteredToThisCourse ? (
+													<div className="comment_header_left">
+														<span>پاسخ</span>
+													</div>
+												) : (
+													<></>
+												)}
 											</div>
 											<div className="comment_content">
 												<span>{comment.comment}.</span>
