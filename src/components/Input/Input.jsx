@@ -32,6 +32,7 @@ export default function Input(props) {
 	},[value])
 
 	const inputOnChangeHandler = (event) => {
+		console.log('asdf');
 		dispacth({
 			type: "CHANGE",
 			value: event.target.value,
@@ -51,15 +52,7 @@ export default function Input(props) {
 				onChange={inputOnChangeHandler}
 				value={mainInput.value}
 				/>
-			) : (
-				<textarea
-				className={props.className}
-				type={props.type}
-				placeholder={props.placeholder}
-				rows={props.rows}
-				onChange={inputOnChangeHandler}
-			/>
-		);
+			) : null;
 
 	return <div>{element}</div>;
 }

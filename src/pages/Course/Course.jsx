@@ -6,7 +6,6 @@ import BreadCrumb from "../../components/BreadCrumb/BreadCrumb";
 import CourseDetailBox from "../../components/CourseDetailBox/CourseDetailBox";
 import Accordion from "react-bootstrap/Accordion";
 import { NavLink } from "react-router-dom";
-import Input from "../../components/Input/Input";
 import { useForm } from "../../hooks/useForm";
 import { useParams } from "react-router-dom";
 import swal from "sweetalert";
@@ -31,19 +30,14 @@ export default function Course() {
 			comment: "دوره جامعی بود خسته نباشید میگم به مدرس.",
 			date: "1403-5-27",
 		},
-		{
-			id: 4,
-			username: "یاشار محمدی",
-			comment: "دوره جامعی بود خسته نباشید میگم به مدرس.",
-			date: "1403-5-27",
-		},
 	]);
 	const [formState, onInputHandler] = useForm({}, false);
 	const { courseName } = useParams();
 	const [
 		isUserRegisteredToThisCourse,
 		setIsUserRegisteredToThisCourse,
-	] = useState(false);
+	] = useState(true);
+	const [textAreaValue, setTextAreaValue] = useState('')
 
 	const loginToCourseHandler = () => {
 		setIsUserRegisteredToThisCourse(false);
@@ -75,6 +69,27 @@ export default function Course() {
 		// 	.then((response) => response.json())
 		// 	.then((result) => console.log(result));
 	}, []);
+
+	const textareaOnChangeHandler = (event) => {
+		
+		setTextAreaValue(event.target.value)
+	}
+	
+	const submitCommentHandler = () => {
+		console.log(textAreaValue);
+		if (textAreaValue.trim().length > 5) {
+			setTextAreaValue('')
+			let newComment = {
+				id: comments.length + 1,
+				username: "یاشار محمدی",
+				comment: textAreaValue,
+				date: "1403-5-27",
+			};
+			comments.push(newComment)
+		}
+	}
+
+
 	return (
 		<div className="course">
 			<Navbar />
@@ -561,17 +576,16 @@ export default function Course() {
 							<h4 className="comments_title">دیدگاهتان را بنویسید</h4>
 							{isUserRegisteredToThisCourse ? (
 								<>
-									<Input
+									<textarea
 										className="comments_textarea"
 										type="text"
 										placeholder="لطفا دیدگاه خود را به اشتراک بگذارید ..."
 										rows={5}
-										element="textarea"
-										onInputHandler={onInputHandler}
-										validation=""
+										onChange={textareaOnChangeHandler}
+										value={textAreaValue}
 									/>
 
-									<button className="comments_btn">ثبت دیدگاه</button>
+									<button className="comments_btn" onClick={submitCommentHandler}>ثبت دیدگاه</button>
 								</>
 							) : (
 								<div className="comment_error_box">
