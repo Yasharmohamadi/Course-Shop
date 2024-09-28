@@ -71,7 +71,6 @@ export default function Course() {
 	}, []);
 
 	const textareaOnChangeHandler = (event) => {
-		
 		setTextAreaValue(event.target.value)
 	}
 	
@@ -86,6 +85,11 @@ export default function Course() {
 				date: "1403-5-27",
 			};
 			comments.push(newComment)
+			swal({
+				title: "کامنت مورد نظر با موفقیت ثبت شد",
+				icon: "success",
+				button: "حله",
+			});
 		}
 	}
 
