@@ -84,7 +84,7 @@ export default function AllCourses() {
 						</div>
 					))}
 
-					<Pagination items={courses} itemsCount={3} pathname='/allcourses' setShowCourses={setShowCourses}/>
+					<Pagination items={courses} itemsCount={2} pathname='/allcourses' setShowCourses={setShowCourses}/>
 				</div>
 			</div>
 			<Footer />
