@@ -22,7 +22,7 @@ export default function Pagination({
 		<div className="pagination">
 			<ul className="pagination_list">
 				<li className="pagination_item">
-					<NavLink to={`${pathname}/${+page - 1}`}>
+					<NavLink to={`${pathname}/${+page - 1 >= 1 ? (+page - 1) : (+page)}`}>
 						<svg
 							className="svg-inline--fa fa-right-long courses__pagination-icon"
 							aria-hidden="true"
@@ -43,13 +43,13 @@ export default function Pagination({
 				{Array(pagesCount)
 					.fill(0)
 					.map((count, index) => (
-						<li className={`pagination_item ${index + 1 == Number(page) ? ('pagination_item--active') : ('')}`}>
+						<li className={`pagination_item ${index + 1 == +page ? ('pagination_item--active') : ('')}`}>
 							<NavLink to={`${pathname}/${index + 1}`}>{index + 1}</NavLink>
 						</li>
 					))}
 				{}
 				<li className="pagination_item">
-					<NavLink to={`${pathname}/${+page + 1}`}>
+					<NavLink to={`${pathname}/${+page + 1 <= pagesCount ? (+page + 1) : (+page)}`}>
 						<svg
 							className="svg-inline--fa fa-left-long courses__pagination-icon"
 							aria-hidden="true"
