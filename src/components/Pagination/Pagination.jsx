@@ -1,7 +1,25 @@
-import React from "react";
+import React, { useState,useEffect } from "react";
 import "./Pagination.css";
+import { useParams } from "react-router-dom";
 
-export default function Pagination() {
+
+export default function Pagination({
+	items,
+	itemsCount,
+	pathname,
+	setShowCourses,
+}) {
+	
+	const { page } = useParams();
+	const [pageCount, setPageCount] = useState(null)
+
+	useEffect(() => {
+		let endIndex = page * itemsCount;
+		let startIndex = endIndex - itemsCount;
+		setShowCourses(items.slice(startIndex, endIndex)); // show courses
+		setPageCount(Math.ceil(items.length / itemsCount)); // count of pages to show
+	}, [page]);
+
 	return (
 		<div className="pagination">
 			<ul className="pagination_list">

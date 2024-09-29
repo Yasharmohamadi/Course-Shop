@@ -1,12 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import CourseBox from "../../components/CourseBox/CourseBox";
 import CoursePageHeader from "../../components/CoursePageHeader/CoursePageHeader";
 import BreadCrumb from "../../components/BreadCrumb/BreadCrumb";
 import Pagination from "../../components/Pagination/Pagination";
-
-import { NavLink, useParams } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./AllCourses.css";
 
 export default function AllCourses() {
@@ -15,54 +14,48 @@ export default function AllCourses() {
 	const [courses, setCourses] = useState([
 		{
 			id: 1,
-			title: "پروژه های فریلنسری",
+			title: "دوره شماره یک",
 			img: "/images/courses/fareelancer.png1",
 		},
 		{
 			id: 2,
-			title: "پروژه های فریلنسری",
+			title: "دوره شماره دو",
 			img: "/images/courses/fareelancer.png1",
 		},
 		{
 			id: 3,
-			title: "پروژه های فریلنسری",
+			title: "دوره شماره سه",
 			img: "/images/courses/fareelancer.png1",
 		},
 		{
 			id: 4,
-			title: "پروژه های فریلنسری",
+			title: "دوره شماره چهار",
 			img: "/images/courses/fareelancer.png1",
 		},
 		{
 			id: 5,
-			title: "پروژه های فریلنسری",
+			title: "دوره شماره پنج",
 			img: "/images/courses/fareelancer.png1",
 		},
 		{
 			id: 6,
-			title: "پروژه های فریلنسری",
+			title: "دوره شماره شش",
 			img: "/images/courses/fareelancer.png1",
 		},
 		{
 			id: 7,
-			title: "پروژه های فریلنسری",
+			title: "دوره شماره هفت",
 			img: "/images/courses/fareelancer.png1",
 		},
 		{
 			id: 8,
-			title: "پروژه های فریلنسری",
+			title: "دوره شماره هشت",
 			img: "/images/courses/fareelancer.png1",
 		},
 	]);
 	const [showCourses, setShowCourses] = useState([]);
-	const { page } = useParams();
-	const showCoursePerPage = 3;
 
-	useEffect(() => {
-		let endIndex = page * showCoursePerPage;
-		let startIndex = endIndex - showCoursePerPage;
-		setShowCourses(courses.slice(startIndex, endIndex));
-	}, []);
+	
 
 	return (
 		<div className="allcourses">
@@ -83,7 +76,7 @@ export default function AllCourses() {
 				<div
 					class={`row ${showColumn ? `allcourses-column` : `allcourses-row`}`}
 				>
-					{courses.map((course) => (
+					{showCourses.map((course) => (
 						<div className="col-12 col-md-6 col-xl-4">
 							<NavLink to="/course/freelancer">
 								<CourseBox title={course.title} img={course.img} />
@@ -91,7 +84,7 @@ export default function AllCourses() {
 						</div>
 					))}
 
-					<Pagination />
+					<Pagination items={courses} itemsCount={3} pathname='/allcourses' setShowCourses={setShowCourses}/>
 				</div>
 			</div>
 			<Footer />
