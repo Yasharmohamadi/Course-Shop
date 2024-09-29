@@ -7,7 +7,7 @@ export default function SectinHeader({ title, hasBtn }) {
 		<div className="section-header">
 				<h3 className="section-header_title">{title}</h3>
 				{hasBtn ? (
-					<Link className="section-header_more" to="/allcourses">
+					<Link className="section-header_more" to="/allcourses/1">
 						نمایش همه
 						<svg
 							className="section-header_more-icon"

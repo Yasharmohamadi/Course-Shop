@@ -11,7 +11,7 @@ export let routes = [
 	{ path: "/", element: <Home /> },
 	{ path: "/course/:coursename", element: <Course /> },
 	{ path: "/category/:categoryname", element: <Category /> },
-	{ path: "/allcourses", element: <AllCourses /> },
+	{ path: "/allcourses/:page", element: <AllCourses /> },
 	{ path: "/register", element: <Register /> },
 	{ path: "/login", element: <Login /> },
 
