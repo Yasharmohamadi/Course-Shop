@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import CourseBox from "../../components/CourseBox/CourseBox";
@@ -6,7 +6,7 @@ import CoursePageHeader from "../../components/CoursePageHeader/CoursePageHeader
 import BreadCrumb from "../../components/BreadCrumb/BreadCrumb";
 import Pagination from "../../components/Pagination/Pagination";
 
-import { NavLink } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import "./AllCourses.css";
 
 export default function AllCourses() {
@@ -54,6 +54,16 @@ export default function AllCourses() {
 			img: "/images/courses/fareelancer.png1",
 		},
 	]);
+	const [showCourses, setShowCourses] = useState([]);
+	const { page } = useParams();
+	const showCoursePerPage = 3;
+
+	useEffect(() => {
+		let endIndex = page * showCoursePerPage;
+		let startIndex = endIndex - showCoursePerPage;
+		setShowCourses(courses.slice(startIndex, endIndex));
+	}, []);
+
 	return (
 		<div className="allcourses">
 			<Navbar />
@@ -80,7 +90,7 @@ export default function AllCourses() {
 							</NavLink>
 						</div>
 					))}
-					
+
 					<Pagination />
 				</div>
 			</div>
