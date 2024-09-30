@@ -69,32 +69,15 @@ export default function Category() {
 						showColumn ? `category-courses-column` : `category-courses-row`
 					}`}
 				>
-					<div className="col-12 col-md-6 col-xl-4">
-						<NavLink to="/course/js">
-							<CourseBox
-								title="دوره متخصص جنگو"
-								img="/images/courses/jango.png1"
-							/>
-						</NavLink>
-					</div>
-					<div className="col-12 col-md-6 col-xl-4">
-						<NavLink to="/course/js">
-							<CourseBox
-								title="دوره متخصص جنگو"
-								img="/images/courses/jango.png1"
-							/>
-						</NavLink>
-					</div>
-					<div className="col-12 col-md-6 col-xl-4">
-						<NavLink to="/course/js">
-							<CourseBox
-								title="دوره متخصص جنگو"
-								img="/images/courses/jango.png1"
-							/>
-						</NavLink>
-					</div>
+					{showCourses.map((course) => (
+						<div className="col-12 col-md-6 col-xl-4">
+							<NavLink to="/course/freelancer">
+								<CourseBox title={course.title} img={course.img} />
+							</NavLink>
+						</div>
+					))}
 				</div>
-				<Pagination />
+				<Pagination  items={courses} itemsCount={2} pathname='/category' setShowCourses={setShowCourses}/>
 			</div>
 			<Footer />
 		</div>

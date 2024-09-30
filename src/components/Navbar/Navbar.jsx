@@ -29,13 +29,13 @@ export default function Navbar() {
 						>
 							<li className="nav-item">صفحه اصلی</li>
 						</NavLink>
-						<NavLink to="/category/front" className="nav-item">
+						<NavLink to="/category/front/1" className="nav-item">
 							<li className="nav-item">فرانت اند</li>
 						</NavLink>
-						<NavLink to="/category/security" className="nav-item">
+						<NavLink to="/category/security/1" className="nav-item">
 							<li className="nav-item">امنیت</li>
 						</NavLink>
-						<NavLink to="/category/python" className="nav-item">
+						<NavLink to="/category/python/1" className="nav-item">
 							<li className="nav-item">پایتون</li>
 						</NavLink>
 					</ul>
