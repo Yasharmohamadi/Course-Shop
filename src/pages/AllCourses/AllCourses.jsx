@@ -55,8 +55,6 @@ export default function AllCourses() {
 	]);
 	const [showCourses, setShowCourses] = useState([]);
 
-	
-
 	return (
 		<div className="allcourses">
 			<Navbar />
