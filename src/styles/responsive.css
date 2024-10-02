@@ -78,21 +78,16 @@
 	}
 
 	.category-header {
-		flex-direction: column-reverse;
-		gap: 1rem;
-	}
-	.category-header_filterbox {
-		width: 100%;
-	}
-	.category-header_selection {
-		width: 100%;
-	}
-	.category-header_searchbox {
-		width: 100%;
+		flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
 	}
 
 	.category-header_selection-list {
-		left: 0;
+		left: -10rem;
+	}
+	.category-header_column-btn, .category-header_row-btn{
+		display: none;
 	}
 }
 
