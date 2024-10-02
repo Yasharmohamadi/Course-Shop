@@ -9,7 +9,7 @@
 	top: 0;
 	box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.1);
 	border-bottom: var(--border);
-	background: linear-gradient(to bottom, var(--primary-color), #20545a88);
+	background: linear-gradient(to bottom, var(--primary-color), var(--primary-color-light));
 	z-index: 2;
 }
 

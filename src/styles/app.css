@@ -15,19 +15,17 @@ html {
 }
 
 :root {
-	--primary-color: #20545a;
-	--primary-color-light: #20545a4f;
-	--yellow-coloe: #898d18;
-	--section-bg-color: #fff;
+	--primary-color: #3C2A2A;
+	--primary-color-light: #3c2a2a83;
 	--app-bg-color: #e1f5fe;
 	--text-color: #333;
 	--background: linear-gradient(
 		to right,
-		#ffffff19,
+		#ffffff2c,
 		var(--primary-color),
-		#ffffff19
+		#ffffff2c
 	);
-	--border: 0.3rem solid #ffffff21;
+	--border: 0.3rem solid #ffffff2c;
 }
 
 body {
