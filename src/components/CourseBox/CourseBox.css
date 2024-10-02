@@ -9,6 +9,7 @@
 	cursor: pointer;
 	transition: all 50ms ease;
 	background: var(--background);
+	width: 100% !important;
 }
 .coursebox_img_wrapper {
 	display: flex;
