@@ -5,12 +5,8 @@
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-	background: linear-gradient(
-		to right,
-		#ffffff21,
-		var(--primary-color),
-		#ffffff21
-	);
+	background: var(--background);
+
 	border: var(--border);
 	border-radius: 1rem;
 	padding: 1rem;
@@ -20,6 +16,8 @@
 	flex-direction: row;
 	align-items: center;
 	gap: 1rem;
+		background: var(--section-bg-color);
+
 }
 
 .category-header_row-btn path,
@@ -34,7 +32,7 @@
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	background: var(--primary-color);
+	background: var(--section-bg-color);
 	border: var(--border);
 	border-radius: 1rem;
 	padding: 0.5rem 1rem;
@@ -61,7 +59,7 @@
 
 	position: absolute;
 	border: var(--border);
-	background: var(--primary-color);
+	background: var(--section-bg-color);
 	color: #fff;
 	display: flex;
 	flex-direction: column;
@@ -92,8 +90,8 @@
 	flex-direction: row;
 	align-items: center;
   justify-content: space-between;
-	background: var(--primary-color);
-	border: var(--border);
+  background: var(--section-bg-color);
+  border: var(--border);
 	border-radius: 1rem;
 	padding: 0.5rem 1rem;
 }

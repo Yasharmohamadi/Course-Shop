@@ -15,15 +15,16 @@ html {
 }
 
 :root {
-	--primary-color: #3C2A2A;
-	--primary-color-light: #3c2a2a83;
-	--app-bg-color: #e1f5fe;
+	--primary-color: #9b9898;
+	--primary-color-light: #3c2a2ab7;
+	--section-bg-color: #3C2A2A;
+	--app-bg-color: #ffffff57;
 	--text-color: #333;
 	--background: linear-gradient(
 		to right,
-		#ffffff2c,
-		var(--primary-color),
-		#ffffff2c
+		var(--primary-color-light),
+		var(--section-bg-color),
+		var(--primary-color-light)
 	);
 	--border: 0.3rem solid #ffffff2c;
 }

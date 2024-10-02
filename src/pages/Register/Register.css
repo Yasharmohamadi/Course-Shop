@@ -40,7 +40,7 @@
 	text-shadow: 0 0 1rem rgba(0, 0, 0, 1);
 }
 .input_wrapper {
-	background: var(--primary-color);
+	background: var(--section-bg-color);
 	width: 100%;
 	position: relative;
 	border-radius: 1rem;

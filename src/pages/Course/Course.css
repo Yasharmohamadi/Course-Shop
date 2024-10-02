@@ -24,7 +24,8 @@
 	margin: 1rem 0 3rem 0;
 }
 .course_header-label {
-	background: #ffffff57;
+	background: var(--app-bg-color);
+
 	padding: 0.5rem 1rem;
 	display: inline;
 	border: var(--border);
@@ -114,7 +115,8 @@
 .course_intro_title::after {
 	content: "";
 	position: absolute;
-	background: #ffffff57;
+	background: var(--app-bg-color);
+
 	width: 3rem;
 	height: 3rem;
 	transform: rotate(45deg);
@@ -140,7 +142,8 @@
 	margin-top: 4rem;
 }
 .course_intro_btn {
-	background: #ffffff57;
+	background: var(--app-bg-color);
+
 	border-radius: 1rem;
 	border: var(--border);
 	padding: 1rem 1.5rem;
@@ -201,7 +204,8 @@
 }
 .teacher_position {
 	cursor: pointer;
-	background: #ffffff57;
+	background: var(--app-bg-color);
+
 	border: var(--border);
 	border-radius: 1rem;
 	padding: 0.5rem;
@@ -247,7 +251,9 @@
 .course_register_content,
 .course_students_wrapper,
 .course_pagelink_wrapper {
-	background: #ffffff57;
+	background: var(--app-bg-color);
+
+	background: var(--app-bg-color);
 	border-radius: 1rem;
 	border: var(--border);
 	padding: 1rem 1.5rem;
@@ -338,12 +344,12 @@
 	margin-bottom: 2rem;
 }
 .comment_box {
-	background: var(--primary-color);
 	border: var(--border);
 	border-radius: 1rem;
 	padding: 2rem;
 	margin-bottom: 2rem;
 	cursor: default;
+	background: var(--section-bg-color);
 }
 .comment_header {
 	display: flex;
@@ -367,7 +373,7 @@
 
 }
 .comment_user_position, .comment_header_left {
-	background: #ffffff57;
+	background: var(--primary-color);
 	padding: 0.5rem 1rem;
 	display: inline;
 	border: var(--border);
@@ -378,7 +384,9 @@
 	
 }
 .comment_error_box{
-	background: #ffffff57;
+	background: var(--background);
+
+
 	padding: 2rem;
 	border: var(--border);
 	border-radius: 1rem;
@@ -397,7 +405,7 @@
 	margin: 2rem 0 1rem 0;
 	outline: none;
 	padding: 1.5rem;
-	background: var(--primary-color);
+	background: var(--section-bg-color);
 	border-radius: 1rem;
 	color: #fff;
 	width: 100%;
@@ -411,7 +419,8 @@
 	color: #ffffffa3;
 }
 .comments_btn {
-	background: #ffffff57;
+	background: var(--app-bg-color);
+
 	border-radius: 1rem;
 	border: var(--border);
 	padding: 1rem 1.5rem;
@@ -435,7 +444,8 @@
 }
 .accordion-button {
 	color: #fff;
-	background: #ffffff57;
+	background: var(--app-bg-color);
+
 	border: none;
 	outline: none;
 	width: 100%;
@@ -467,7 +477,8 @@
 	width: 2rem;
 }
 .accordion_number {
-	background: #ffffff57;
+	background: var(--app-bg-color);
+
 	border-radius: 50%;
 	width: 3rem;
 	height: 3rem;

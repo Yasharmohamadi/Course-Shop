@@ -3,7 +3,6 @@
 	margin-top: 5rem;
 	border-radius: 1rem;
 	overflow: hidden;
-	
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -24,7 +23,7 @@
 .section-header_title::after {
 	content: "";
 	position: absolute;
-    background: #ffffff57;
+	background: #ffffff57;
 	width: 2.5rem;
 	height: 2.5rem;
 	transform: rotate(45deg);
@@ -57,21 +56,20 @@
 	width: 2rem;
 }
 
-
 .section-header_more::after {
-    content: "";
-    position: absolute;
-    background: #ffffff57;
-    width: 2.5rem;
-    height: 2.5rem;
-    transform: rotate(45deg);
-    right: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    opacity: 0;
-    border-radius: 0.5rem;
+	content: "";
+	position: absolute;
+	background: #ffffff57;
+	width: 2.5rem;
+	height: 2.5rem;
+	transform: rotate(45deg);
+	right: 0;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	opacity: 0;
+	border-radius: 0.5rem;
 	transition: all 150ms ease-in-out;
 	z-index: -1;
 }

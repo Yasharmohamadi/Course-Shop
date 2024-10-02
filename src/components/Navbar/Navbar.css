@@ -9,7 +9,9 @@
 	top: 0;
 	box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.1);
 	border-bottom: var(--border);
-	background: linear-gradient(to bottom, var(--primary-color), var(--primary-color-light));
+	/* background: linear-gradient(to bottom, var(--section-bg-color), var(--primary-color-light)); */
+	background: var(--background);
+
 	z-index: 2;
 }
 
@@ -104,8 +106,7 @@
 
 .nav-user {
 	border: var(--border);
-	/* border: 0.3rem solid #fff; */
-	background: var(--primary-color);
+	background: var(--app-bg-color);
 	padding: .5rem 1rem;
 	color: #fff;
 	border-radius: 0.5rem;
