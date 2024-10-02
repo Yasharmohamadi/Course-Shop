@@ -14,3 +14,13 @@
 .category-courses-column div {
 	width: 100%;
 }
+
+.search-error-box {
+	background: var(--section-bg-color);
+	border-radius: 1rem;
+	border: var(--border);
+	padding: 2rem;
+	color: #fff;
+	/* margin-bottom: 2rem ; */
+
+}

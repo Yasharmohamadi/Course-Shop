@@ -6,6 +6,8 @@ export default function CoursePageHeader({
 	showColumn,
 	setShowSelection,
 	setShowColumn,
+	searchValue,
+	searchValueHandler,
 }) {
 	return (
 		<div>
@@ -97,10 +99,11 @@ export default function CoursePageHeader({
 					</div>
 				</div>
 				<div className="category-header_searchbox">
-					<form action="">
 						<input
 							className="category-header_searchbox-input"
 							placeholder="جستجوی دوره ..."
+							value={searchValue}
+							onChange={(event) =>searchValueHandler(event)}
 						/>
 						<div className="category-header_searchbox-icon">
 							<svg
@@ -119,7 +122,6 @@ export default function CoursePageHeader({
 								></path>
 							</svg>
 						</div>
-					</form>
 				</div>
 			</div>
 		</div>
